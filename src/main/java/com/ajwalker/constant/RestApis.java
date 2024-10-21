@@ -9,7 +9,7 @@ public class RestApis {
 
     private static final String ROOT = VERSION+ DEVELOPER;
 
-    public static final String USER = ROOT+ "/user";
+    public static final String USER = ROOT+ "/kullanici";
     public static final String POST = ROOT+ "/post";
     public static final String REGISTER = "/register";
 }
