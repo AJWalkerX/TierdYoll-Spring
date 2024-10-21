@@ -12,15 +12,14 @@ spring:
       ddl-auto: update
     show-sql: true
 
-#logging:
-#  file:
-#    name: proje.log
-#  level:
-#    root: info
-#    com.ajwalker: trace
-#  logback:
-#    rollingpolicy:
-#      max-file-size: 2MB
+logging:
+  file:
+    name: proje.log
+  level:
+    root: info
+  logback:
+    rollingpolicy:
+      max-file-size: 2MB
 
 
 java15:

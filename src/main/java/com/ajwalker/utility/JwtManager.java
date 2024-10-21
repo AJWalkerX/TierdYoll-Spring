@@ -37,7 +37,7 @@ public class JwtManager {
 	private String SecretKey;
 	@Value("${java15.jwt.issuer}")
 	private String Issuer;
-	private final Long ExDate = 1000L * 40; // 40sn sonra iptal olsun
+	private final Long ExDate = 1000L * 300; // 5 dakika sonra iptal olsun
 	
 	public String createToken(Long authId){
 		Date createdDate = new Date(System.currentTimeMillis());
