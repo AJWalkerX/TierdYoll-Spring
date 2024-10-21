@@ -24,6 +24,7 @@ public class UserService {
 	
 	public void register( RegisterRequestDto dto) {
         User user = UserMapper.INSTANCE.fromRegisterRequestDto(dto);
+        
         userRepository.save(user);
 	}
     
