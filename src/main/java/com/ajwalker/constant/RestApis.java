@@ -11,5 +11,5 @@ public class RestApis {
 
     public static final String USER = ROOT+ "/user";
     public static final String POST = ROOT+ "/post";
-
+    public static final String REGISTER = "/register";
 }
