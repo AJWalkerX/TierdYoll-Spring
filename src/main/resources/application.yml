@@ -4,10 +4,26 @@ server:
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/tierdyoldb
-    username: postgres
-    password: root
+    url: ${TIERDYOL_POSTGRE_URL}
+    username: ${TIERDYOL_POSTGRE_USERNAME}
+    password: ${TIERDYOL_POSTGRE_PASSWORD}
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
+
+#logging:
+#  file:
+#    name: proje.log
+#  level:
+#    root: info
+#    com.ajwalker: trace
+#  logback:
+#    rollingpolicy:
+#      max-file-size: 2MB
+
+
+java15:
+  jwt:
+    secret-key: ${TIERDYOL_JWT_SECRETKEY}
+    issuer: ${TIERDYOL_JWT_ISSUER}
