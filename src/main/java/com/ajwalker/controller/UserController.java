@@ -26,7 +26,7 @@ public class UserController {
     
     @PostMapping(REGISTER)
     public ResponseEntity<BaseResponse<Boolean>> register(@RequestBody @Valid RegisterRequestDto dto){
-        if(!dto.getPassword().equals(dto.getRePassword()))
+        if(!dto.password().equals(dto.password()))
             throw new TierdYolException(ErrorType.PASSWORD_ERROR);
         userService.register(dto);
         return ResponseEntity.ok(BaseResponse.<Boolean>builder()
