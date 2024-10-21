@@ -1,6 +1,6 @@
 package com.ajwalker.utility.enums;
 
-public enum EUserLevel {
+public enum EUserStatus {
     ADMIN,
     USER,
     SELLER
