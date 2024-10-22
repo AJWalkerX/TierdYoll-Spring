@@ -18,4 +18,12 @@ public class MailSenderService {
         message.setText("Hesabınızı doğrulamak için lütfen aşağıdaki linke tıklayın:\n" + link);
         mailSender.send(message);
     }
+
+    public void sendResetPasswordEmail(String email, String resetLink) {
+        SimpleMailMessage message = new SimpleMailMessage();
+        message.setTo(email);
+        message.setSubject("Şifre yenileme linki");
+        message.setText("Şifrenizi yenilemek için linke tıklayınız:\n" + resetLink);
+        mailSender.send(message);
+    }
 }

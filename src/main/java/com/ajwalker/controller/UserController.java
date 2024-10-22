@@ -3,6 +3,7 @@ package com.ajwalker.controller;
 
 import com.ajwalker.dto.request.DologinRequestDto;
 import com.ajwalker.dto.request.RegisterRequestDto;
+import com.ajwalker.dto.request.ResetPasswordRequestDto;
 import com.ajwalker.dto.response.BaseResponse;
 import com.ajwalker.entity.User;
 import com.ajwalker.exception.ErrorType;
@@ -69,6 +70,32 @@ public class UserController {
                 .code(200)
                 .data(true)
                 .message("E-posta doğrulandı, hesabınız aktif.")
+                .success(true)
+                .build());
+    }
+
+    @PostMapping(FORGOT_PASSWORD)
+    public ResponseEntity<BaseResponse<Boolean>> forgotPassword(@RequestParam String email) {
+        String resetToken = userService.generatePasswordResetToken(email);
+        String resetLink = "http://localhost:9090/v1/dev/kullanici/reset-password?token=" + resetToken;
+        mailSenderService.sendResetPasswordEmail(email, resetLink);
+
+        return ResponseEntity.ok(BaseResponse.<Boolean>builder()
+                .code(200)
+                .data(true)
+                .message("Şifre sıfırlama bağlantısı e-posta adresinize gönderildi.")
+                .success(true)
+                .build());
+    }
+
+    @PostMapping(RESET_PASSWORD)
+    public ResponseEntity<BaseResponse<Boolean>> resetPassword(@RequestParam String token,
+                                                               @RequestBody @Valid ResetPasswordRequestDto dto) {
+        userService.resetPassword(token, dto.password());
+        return ResponseEntity.ok(BaseResponse.<Boolean>builder()
+                .code(200)
+                .data(true)
+                .message("Şifreniz başarıyla sıfırlandı.")
                 .success(true)
                 .build());
     }

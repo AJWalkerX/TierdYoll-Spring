@@ -59,6 +59,21 @@ public class UserService {
         return generateToken(userOptional.get().getId());
     }
 
+    public String generatePasswordResetToken(String email) {
+        User user = userRepository.findByEmail(email)
+                .orElseThrow(() -> new TierdYolException(ErrorType.NOTFOUND_USER));
+        String token = jwtManager.createToken(user.getId());
+        return token;
+    }
+
+    public void resetPassword(String token, String newPassword) {
+        Long userId = validateToken(token);
+        User user = findById(userId);
+        user.setPassword(passwordEncoder.encode(newPassword));
+        userRepository.save(user);
+    }
+
+
     public User findById(Long authId) {
         Optional<User> userOptional = userRepository.findById(authId);
         if (userOptional.isEmpty()) {
@@ -78,6 +93,6 @@ public class UserService {
     public EUserStatus findUserStatusByUserId(Long userId){
         return userRepository.findById(userId).map(User::getUserStatus).orElse(null);
     }
-    
-    
+
+
 }
