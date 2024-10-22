@@ -15,7 +15,7 @@ public record RegisterRequestDto(
         String address,
         @NotNull(message = "Kullanıcı adı boş geçilemez.")
         @Size(min = 3, max = 64, message = "Kullanıcı adı , 3-64 arasında karakter kısıtlamsana sahiptir.")
-                String userName,
+                String username,
         @NotNull
         @NotEmpty
         @Size(min = 8,max = 64)

@@ -1,9 +1,7 @@
 package com.ajwalker.entity;
 
 import com.ajwalker.utility.enums.EState;
-import jakarta.persistence.MappedSuperclass;
-import jakarta.persistence.PrePersist;
-import jakarta.persistence.PreUpdate;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -27,7 +25,6 @@ public class BaseEntity {
     protected void create(){
         createAt = LocalDate.now();
         updateAt = LocalDate.now();
-
     }
 
     @PreUpdate

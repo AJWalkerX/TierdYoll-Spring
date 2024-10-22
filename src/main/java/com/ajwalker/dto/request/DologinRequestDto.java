@@ -7,7 +7,7 @@ import jakarta.validation.constraints.Size;
 public record DologinRequestDto(
 		@NotNull
 		@Size(min = 3, max = 40)
-		String userName,
+		String username,
 		@NotNull
 		@Size(min = 8, max = 64)
 		@Pattern(

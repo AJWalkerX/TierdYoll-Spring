@@ -33,9 +33,9 @@ public class User extends BaseEntity{
     @Size(min = 8,max = 64)
     String password;
     String name;
-    @Column(name = "sur_name")
-    String surName;
+    String surname;
     String address;
-    @Column(name = "user_name", nullable = false,unique = true)
-    String userName;
+    @Column(nullable = false,unique = true)
+    String username;
+
 }
