@@ -8,6 +8,7 @@ import com.ajwalker.entity.BaseEntity;
 import com.ajwalker.entity.Product;
 import com.ajwalker.service.ProductService;
 import com.ajwalker.views.VwProduct;
+import com.ajwalker.views.VwProductDetails;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -41,6 +42,16 @@ public class ProductController {
 				                         .code(200)
 				                         .message("All products success")
 				                         .data(productService.getAllProducts())
+		                                     .build());
+	}
+	
+	@GetMapping("/v1/dev/product/get-product-details")
+	public  ResponseEntity<BaseResponse<VwProductDetails>> getProductDetails(String productCode){
+		return ResponseEntity.ok(BaseResponse.<VwProductDetails>builder()
+				                         .success(true)
+				                         .code(200)
+				                         .message("Product details success")
+				                         .data(productService.getProductDetails(productCode).get())
 		                                     .build());
 	}
 	

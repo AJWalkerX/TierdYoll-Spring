@@ -12,8 +12,13 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Builder
 @Data
-public class VwProduct {
-	String name;
+
+public class VwProductDetails {
+    String name;
 	String productCode;
+	Long price;
+	Long userId;
+	Integer stock;
 	ECategory category;
+	
 }

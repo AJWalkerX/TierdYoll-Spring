@@ -11,6 +11,7 @@ import com.ajwalker.repository.ProductRepository;
 import com.ajwalker.repository.UserRepository;
 import com.ajwalker.utility.enums.EUserStatus;
 import com.ajwalker.views.VwProduct;
+import com.ajwalker.views.VwProductDetails;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -55,5 +56,13 @@ public class ProductService {
 		}
 		productRepository.save(ProductMapper.INSTANCE.fromDeleteProductRequestDto(dto,productId.get()));
 		
+	}
+	
+	public Optional<VwProductDetails> getProductDetails(String productCode) {
+		Optional<VwProductDetails> byProductCode = productRepository.findByProductCode(productCode);
+		if (byProductCode.isEmpty()){
+			throw new TierdYolException(ErrorType.NOT_FOUNT_PRODUCT_CODE);
+		}
+		return byProductCode;
 	}
 }
