@@ -17,7 +17,8 @@ public enum ErrorType {
     LOGIN_STATE_ERROR(7002, "Kullanıc Aktif değildir!",HttpStatus.BAD_REQUEST),
     INVALID_TOKEN(9001,"geçersiz token bilgisi",HttpStatus.BAD_REQUEST),
     INVALID_STATUS(8001,"Urun eklemek için admin yada satıcı olamanız gerekmektedir",HttpStatus.BAD_REQUEST),
-    NOT_FOUNT_PRODUCT(8002,"Aradığınız ürün bulunmamaktadır",HttpStatus.BAD_REQUEST);
+    NOT_FOUNT_PRODUCT(8002,"Aradığınız ürün bulunmamaktadır",HttpStatus.BAD_REQUEST),
+    NOT_FOUNT_PRODUCT_CODE(8003,"Ürün kodu bulunmamaktadır",HttpStatus.BAD_REQUEST ),;
 
 
     int code;
