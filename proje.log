@@ -2294,3 +2294,746 @@ This generated password is for development use only. Your security configuration
 2024-10-22T18:36:38.778+03:00  INFO 23368 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-10-22T18:36:38.779+03:00  INFO 23368 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2024-10-22T18:36:38.781+03:00  INFO 23368 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-10-22T18:52:30.868+03:00  INFO 21436 --- [main] com.ajwalker.TierdYolApplication         : Starting TierdYolApplication using Java 21.0.3 with PID 21436 (C:\intellij\SpringProjesi\TierdYoll-Spring\build\classes\java\main started by AHMET in C:\intellij\SpringProjesi\TierdYoll-Spring)
+2024-10-22T18:52:30.870+03:00  INFO 21436 --- [main] com.ajwalker.TierdYolApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-10-22T18:52:31.825+03:00  INFO 21436 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-22T18:52:31.895+03:00  INFO 21436 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 1 JPA repository interface.
+2024-10-22T18:52:32.457+03:00  INFO 21436 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-10-22T18:52:32.475+03:00  INFO 21436 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-22T18:52:32.476+03:00  INFO 21436 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-22T18:52:32.535+03:00  INFO 21436 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-22T18:52:32.535+03:00  INFO 21436 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1621 ms
+2024-10-22T18:52:32.734+03:00  INFO 21436 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-22T18:52:32.843+03:00  INFO 21436 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-22T18:52:32.889+03:00  INFO 21436 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-22T18:52:33.237+03:00  INFO 21436 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-22T18:52:33.272+03:00  INFO 21436 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-22T18:52:33.440+03:00  INFO 21436 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@40a28bda
+2024-10-22T18:52:33.441+03:00  INFO 21436 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-22T18:52:34.549+03:00  INFO 21436 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-22T18:52:34.631+03:00  INFO 21436 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-22T18:52:35.100+03:00  WARN 21436 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-22T18:52:35.537+03:00  WARN 21436 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: a2212deb-91b9-44f6-9df4-dee5c4d06056
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-10-22T18:52:35.549+03:00  INFO 21436 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-10-22T18:52:35.672+03:00  INFO 21436 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/'
+2024-10-22T18:52:35.679+03:00  INFO 21436 --- [main] com.ajwalker.TierdYolApplication         : Started TierdYolApplication in 5.371 seconds (process running for 5.951)
+2024-10-22T18:52:46.697+03:00  INFO 21436 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-22T18:52:46.721+03:00  INFO 21436 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-10-22T18:52:46.724+03:00  INFO 21436 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-10-22T18:52:49.500+03:00  INFO 25068 --- [main] com.ajwalker.TierdYolApplication         : Starting TierdYolApplication using Java 21.0.3 with PID 25068 (C:\intellij\SpringProjesi\TierdYoll-Spring\build\classes\java\main started by AHMET in C:\intellij\SpringProjesi\TierdYoll-Spring)
+2024-10-22T18:52:49.502+03:00  INFO 25068 --- [main] com.ajwalker.TierdYolApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-10-22T18:52:50.378+03:00  INFO 25068 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-22T18:52:50.444+03:00  INFO 25068 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 1 JPA repository interface.
+2024-10-22T18:52:50.949+03:00  INFO 25068 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-10-22T18:52:50.961+03:00  INFO 25068 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-22T18:52:50.961+03:00  INFO 25068 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-22T18:52:51.015+03:00  INFO 25068 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-22T18:52:51.016+03:00  INFO 25068 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1454 ms
+2024-10-22T18:52:51.164+03:00  INFO 25068 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-22T18:52:51.235+03:00  INFO 25068 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-22T18:52:51.264+03:00  INFO 25068 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-22T18:52:51.563+03:00  INFO 25068 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-22T18:52:51.586+03:00  INFO 25068 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-22T18:52:51.719+03:00  INFO 25068 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5fa5c8cf
+2024-10-22T18:52:51.720+03:00  INFO 25068 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-22T18:52:52.758+03:00  INFO 25068 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-22T18:52:52.851+03:00  WARN 25068 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-10-22T18:52:52.852+03:00  WARN 25068 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : constraint "ukk0bty7tbcye41jpxam88q5kj2" of relation "tbl_user" does not exist, skipping
+2024-10-22T18:52:52.856+03:00  INFO 25068 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-22T18:52:53.323+03:00  WARN 25068 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-22T18:52:53.721+03:00  WARN 25068 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 7258866f-e858-41b2-ba3f-4186f5fb4970
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-10-22T18:52:53.733+03:00  INFO 25068 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-10-22T18:52:53.853+03:00  INFO 25068 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/'
+2024-10-22T18:52:53.860+03:00  INFO 25068 --- [main] com.ajwalker.TierdYolApplication         : Started TierdYolApplication in 4.804 seconds (process running for 5.383)
+2024-10-22T18:53:02.477+03:00  INFO 25068 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-22T18:53:02.477+03:00  INFO 25068 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-22T18:53:02.478+03:00  INFO 25068 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-10-22T18:53:35.459+03:00  INFO 25068 --- [http-nio-9090-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 515 ms
+2024-10-22T18:57:19.107+03:00  INFO 25068 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-22T18:57:19.110+03:00  INFO 25068 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-10-22T18:57:19.114+03:00  INFO 25068 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.2024-10-22T19:26:16.603+03:00  INFO 23328 --- [main] com.ajwalker.TierdYolApplication         : Starting TierdYolApplication using Java 21.0.3 with PID 23328 (C:\intellij\SpringProjesi\TierdYoll-Spring\build\classes\java\main started by AHMET in C:\intellij\SpringProjesi\TierdYoll-Spring)
+2024-10-22T19:26:16.605+03:00  INFO 23328 --- [main] com.ajwalker.TierdYolApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-10-22T19:26:17.534+03:00  INFO 23328 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-22T19:26:17.635+03:00  INFO 23328 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 93 ms. Found 2 JPA repository interfaces.
+2024-10-22T19:26:18.134+03:00  INFO 23328 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-10-22T19:26:18.147+03:00  INFO 23328 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-22T19:26:18.147+03:00  INFO 23328 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-22T19:26:18.203+03:00  INFO 23328 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-22T19:26:18.204+03:00  INFO 23328 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1546 ms
+2024-10-22T19:26:18.337+03:00  INFO 23328 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-22T19:26:18.407+03:00  INFO 23328 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-22T19:26:18.451+03:00  INFO 23328 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-22T19:26:18.710+03:00  INFO 23328 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-22T19:26:18.734+03:00  INFO 23328 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-22T19:26:18.873+03:00  INFO 23328 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@16b7e04a
+2024-10-22T19:26:18.875+03:00  INFO 23328 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-22T19:26:19.887+03:00  INFO 23328 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-22T19:26:19.953+03:00  INFO 23328 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-22T19:26:20.531+03:00  WARN 23328 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-22T19:26:20.565+03:00  WARN 23328 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: ecd571c5-877a-44da-8c74-a988e6aba69a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-10-22T19:26:20.585+03:00  INFO 23328 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-10-22T19:26:21.161+03:00  INFO 23328 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/'
+2024-10-22T19:26:21.167+03:00  INFO 23328 --- [main] com.ajwalker.TierdYolApplication         : Started TierdYolApplication in 5.071 seconds (process running for 5.629)
+2024-10-22T19:26:27.693+03:00  INFO 23328 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-22T19:26:27.693+03:00  INFO 23328 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-22T19:26:27.694+03:00  INFO 23328 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-10-22T19:26:28.255+03:00  INFO 23328 --- [http-nio-9090-exec-5] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 268 ms
+2024-10-22T19:27:23.630+03:00 ERROR 23328 --- [http-nio-9090-exec-6] c.a.exception.GlobalExcepitonHandler     : TÜM HATALARIN GEÇTİĞİ NOKTA....: Sunucuda beklenmeyen bir hata oldu. Lütfen tekrar deneyinnull
+2024-10-22T19:28:20.564+03:00  WARN 23328 --- [http-nio-9090-exec-6] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2024-10-22T19:28:20.564+03:00 ERROR 23328 --- [http-nio-9090-exec-6] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: duplicate key value violates unique constraint "ukk0bty7tbcye41jpxam88q5kj2"
+  Ayrıntı: Key (username)=(ahmete) already exists.
+2024-10-22T19:28:20.574+03:00 ERROR 23328 --- [http-nio-9090-exec-6] c.a.exception.GlobalExcepitonHandler     : TÜM HATALARIN GEÇTİĞİ NOKTA....: Sunucuda beklenmeyen bir hata oldu. Lütfen tekrar deneyinnull
+2024-10-22T19:28:43.635+03:00 ERROR 23328 --- [http-nio-9090-exec-2] c.a.exception.GlobalExcepitonHandler     : TÜM HATALARIN GEÇTİĞİ NOKTA....: Sunucuda beklenmeyen bir hata oldu. Lütfen tekrar deneyinnull
+2024-10-22T19:29:07.764+03:00  INFO 23328 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-22T19:29:07.767+03:00  INFO 23328 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-10-22T19:29:07.769+03:00  INFO 23328 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-10-22T19:29:10.773+03:00  INFO 18708 --- [main] com.ajwalker.TierdYolApplication         : Starting TierdYolApplication using Java 21.0.3 with PID 18708 (C:\intellij\SpringProjesi\TierdYoll-Spring\build\classes\java\main started by AHMET in C:\intellij\SpringProjesi\TierdYoll-Spring)
+2024-10-22T19:29:10.775+03:00  INFO 18708 --- [main] com.ajwalker.TierdYolApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-10-22T19:29:11.555+03:00  INFO 18708 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-22T19:29:11.616+03:00  INFO 18708 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 2 JPA repository interfaces.
+2024-10-22T19:29:12.048+03:00  INFO 18708 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-10-22T19:29:12.059+03:00  INFO 18708 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-22T19:29:12.060+03:00  INFO 18708 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-22T19:29:12.104+03:00  INFO 18708 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-22T19:29:12.104+03:00  INFO 18708 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1283 ms
+2024-10-22T19:29:12.223+03:00  INFO 18708 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-22T19:29:12.262+03:00  INFO 18708 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-22T19:29:12.315+03:00  INFO 18708 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-22T19:29:12.606+03:00  INFO 18708 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-22T19:29:12.630+03:00  INFO 18708 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-22T19:29:12.759+03:00  INFO 18708 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@77856cc5
+2024-10-22T19:29:12.761+03:00  INFO 18708 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-22T19:29:13.913+03:00  INFO 18708 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-22T19:29:14.025+03:00  INFO 18708 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-22T19:29:14.479+03:00  WARN 18708 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-22T19:29:14.498+03:00  WARN 18708 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: fb639f84-5bd5-45e3-8d8f-54522f74b406
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-10-22T19:29:14.509+03:00  INFO 18708 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-10-22T19:29:15.056+03:00  INFO 18708 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/'
+2024-10-22T19:29:15.068+03:00  INFO 18708 --- [main] com.ajwalker.TierdYolApplication         : Started TierdYolApplication in 4.698 seconds (process running for 5.256)
+2024-10-22T19:29:20.201+03:00  INFO 18708 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-22T19:29:20.236+03:00  INFO 18708 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-10-22T19:29:20.240+03:00  INFO 18708 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-10-22T19:29:22.759+03:00  INFO 16652 --- [main] com.ajwalker.TierdYolApplication         : Starting TierdYolApplication using Java 21.0.3 with PID 16652 (C:\intellij\SpringProjesi\TierdYoll-Spring\build\classes\java\main started by AHMET in C:\intellij\SpringProjesi\TierdYoll-Spring)
+2024-10-22T19:29:22.761+03:00  INFO 16652 --- [main] com.ajwalker.TierdYolApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-10-22T19:29:23.651+03:00  INFO 16652 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-22T19:29:23.728+03:00  INFO 16652 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 2 JPA repository interfaces.
+2024-10-22T19:29:24.254+03:00  INFO 16652 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-10-22T19:29:24.269+03:00  INFO 16652 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-22T19:29:24.270+03:00  INFO 16652 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-22T19:29:24.322+03:00  INFO 16652 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-22T19:29:24.324+03:00  INFO 16652 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1509 ms
+2024-10-22T19:29:24.485+03:00  INFO 16652 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-22T19:29:24.568+03:00  INFO 16652 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-22T19:29:24.603+03:00  INFO 16652 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-22T19:29:24.945+03:00  INFO 16652 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-22T19:29:24.981+03:00  INFO 16652 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-22T19:29:25.258+03:00  INFO 16652 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@aee05f4
+2024-10-22T19:29:25.260+03:00  INFO 16652 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-22T19:29:26.393+03:00  INFO 16652 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-22T19:29:26.513+03:00  WARN 16652 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-10-22T19:29:26.513+03:00  WARN 16652 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : constraint "ukk0bty7tbcye41jpxam88q5kj2" of relation "tbl_user" does not exist, skipping
+2024-10-22T19:29:26.518+03:00  INFO 16652 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-22T19:29:26.990+03:00  WARN 16652 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-22T19:29:27.013+03:00  WARN 16652 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: aa6fc44b-e1bd-4d12-8df3-919e2c449f12
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-10-22T19:29:27.025+03:00  INFO 16652 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-10-22T19:29:27.613+03:00  INFO 16652 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/'
+2024-10-22T19:29:27.620+03:00  INFO 16652 --- [main] com.ajwalker.TierdYolApplication         : Started TierdYolApplication in 5.252 seconds (process running for 5.804)
+2024-10-22T19:29:32.908+03:00  INFO 16652 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-22T19:29:32.908+03:00  INFO 16652 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-22T19:29:32.910+03:00  INFO 16652 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-10-22T19:29:33.459+03:00  INFO 16652 --- [http-nio-9090-exec-5] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 287 ms
+2024-10-22T19:29:40.295+03:00 ERROR 16652 --- [http-nio-9090-exec-4] c.a.exception.GlobalExcepitonHandler     : TÜM HATALARIN GEÇTİĞİ NOKTA....: Sunucuda beklenmeyen bir hata oldu. Lütfen tekrar deneyinnull
+2024-10-22T19:32:54.865+03:00  WARN 16652 --- [http-nio-9090-exec-6] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2024-10-22T19:32:54.865+03:00 ERROR 16652 --- [http-nio-9090-exec-6] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: duplicate key value violates unique constraint "ukk0bty7tbcye41jpxam88q5kj2"
+  Ayrıntı: Key (username)=(ahmetee) already exists.
+2024-10-22T19:32:54.875+03:00 ERROR 16652 --- [http-nio-9090-exec-6] c.a.exception.GlobalExcepitonHandler     : TÜM HATALARIN GEÇTİĞİ NOKTA....: Sunucuda beklenmeyen bir hata oldu. Lütfen tekrar deneyinnull
+2024-10-22T19:33:04.374+03:00 ERROR 16652 --- [http-nio-9090-exec-8] c.a.exception.GlobalExcepitonHandler     : TÜM HATALARIN GEÇTİĞİ NOKTA....: Sunucuda beklenmeyen bir hata oldu. Lütfen tekrar deneyinnull
+2024-10-22T19:33:55.693+03:00  INFO 16652 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-22T19:33:55.696+03:00  INFO 16652 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-10-22T19:33:55.701+03:00  INFO 16652 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-10-22T19:33:59.280+03:00  INFO 2724 --- [main] com.ajwalker.TierdYolApplication         : Starting TierdYolApplication using Java 21.0.3 with PID 2724 (C:\intellij\SpringProjesi\TierdYoll-Spring\build\classes\java\main started by AHMET in C:\intellij\SpringProjesi\TierdYoll-Spring)
+2024-10-22T19:33:59.282+03:00  INFO 2724 --- [main] com.ajwalker.TierdYolApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-10-22T19:34:00.161+03:00  INFO 2724 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-22T19:34:00.226+03:00  INFO 2724 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 2 JPA repository interfaces.
+2024-10-22T19:34:00.654+03:00  INFO 2724 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-10-22T19:34:00.666+03:00  INFO 2724 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-22T19:34:00.666+03:00  INFO 2724 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-22T19:34:00.712+03:00  INFO 2724 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-22T19:34:00.713+03:00  INFO 2724 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1393 ms
+2024-10-22T19:34:00.835+03:00  INFO 2724 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-22T19:34:00.904+03:00  INFO 2724 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-22T19:34:00.939+03:00  INFO 2724 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-22T19:34:01.226+03:00  INFO 2724 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-22T19:34:01.253+03:00  INFO 2724 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-22T19:34:01.389+03:00  INFO 2724 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@16b7e04a
+2024-10-22T19:34:01.392+03:00  INFO 2724 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-22T19:34:02.322+03:00  INFO 2724 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-22T19:34:02.370+03:00  INFO 2724 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-22T19:34:02.781+03:00  WARN 2724 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-22T19:34:02.796+03:00  WARN 2724 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 7b858a69-16f0-46e2-bcea-4a972656325f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-10-22T19:34:02.806+03:00  INFO 2724 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-10-22T19:34:03.312+03:00  INFO 2724 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/'
+2024-10-22T19:34:03.319+03:00  INFO 2724 --- [main] com.ajwalker.TierdYolApplication         : Started TierdYolApplication in 4.454 seconds (process running for 4.992)
+2024-10-22T19:34:15.057+03:00  INFO 2724 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-22T19:34:15.058+03:00  INFO 2724 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-22T19:34:15.059+03:00  INFO 2724 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-10-22T19:34:15.821+03:00  INFO 2724 --- [http-nio-9090-exec-5] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 327 ms
+2024-10-22T19:36:53.350+03:00  INFO 2724 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-22T19:36:53.353+03:00  INFO 2724 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-10-22T19:36:53.355+03:00  INFO 2724 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-10-22T19:36:55.901+03:00  INFO 6312 --- [main] com.ajwalker.TierdYolApplication         : Starting TierdYolApplication using Java 21.0.3 with PID 6312 (C:\intellij\SpringProjesi\TierdYoll-Spring\build\classes\java\main started by AHMET in C:\intellij\SpringProjesi\TierdYoll-Spring)
+2024-10-22T19:36:55.902+03:00  INFO 6312 --- [main] com.ajwalker.TierdYolApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-10-22T19:36:56.711+03:00  INFO 6312 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-22T19:36:56.800+03:00  INFO 6312 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 82 ms. Found 2 JPA repository interfaces.
+2024-10-22T19:36:57.258+03:00  INFO 6312 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-10-22T19:36:57.270+03:00  INFO 6312 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-22T19:36:57.270+03:00  INFO 6312 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-22T19:36:57.319+03:00  INFO 6312 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-22T19:36:57.319+03:00  INFO 6312 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1372 ms
+2024-10-22T19:36:57.447+03:00  INFO 6312 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-22T19:36:57.516+03:00  INFO 6312 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-22T19:36:57.551+03:00  INFO 6312 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-22T19:36:57.866+03:00  INFO 6312 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-22T19:36:57.890+03:00  INFO 6312 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-22T19:36:58.036+03:00  INFO 6312 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@33a71d23
+2024-10-22T19:36:58.037+03:00  INFO 6312 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-22T19:36:59.030+03:00  INFO 6312 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-22T19:36:59.079+03:00  INFO 6312 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-22T19:36:59.444+03:00  WARN 6312 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-22T19:36:59.457+03:00  WARN 6312 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 21811539-a380-4dff-8868-a7a6ade0610a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-10-22T19:36:59.466+03:00  INFO 6312 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-10-22T19:36:59.996+03:00  INFO 6312 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/'
+2024-10-22T19:37:00.002+03:00  INFO 6312 --- [main] com.ajwalker.TierdYolApplication         : Started TierdYolApplication in 4.512 seconds (process running for 5.041)
+2024-10-22T19:38:03.175+03:00  INFO 6312 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-22T19:38:03.175+03:00  INFO 6312 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-22T19:38:03.178+03:00  INFO 6312 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-10-22T19:38:05.064+03:00 ERROR 6312 --- [http-nio-9090-exec-1] c.a.exception.GlobalExcepitonHandler     : TÜM HATALARIN GEÇTİĞİ NOKTA....: Sunucuda beklenmeyen bir hata oldu. Lütfen tekrar deneyinnull
+2024-10-22T19:38:49.791+03:00  INFO 6312 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-22T19:38:49.793+03:00  INFO 6312 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-10-22T19:38:49.796+03:00  INFO 6312 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-10-22T19:38:52.538+03:00  INFO 20052 --- [main] com.ajwalker.TierdYolApplication         : Starting TierdYolApplication using Java 21.0.3 with PID 20052 (C:\intellij\SpringProjesi\TierdYoll-Spring\build\classes\java\main started by AHMET in C:\intellij\SpringProjesi\TierdYoll-Spring)
+2024-10-22T19:38:52.546+03:00  INFO 20052 --- [main] com.ajwalker.TierdYolApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-10-22T19:38:53.423+03:00  INFO 20052 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-22T19:38:53.517+03:00  INFO 20052 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 2 JPA repository interfaces.
+2024-10-22T19:38:54.065+03:00  INFO 20052 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-10-22T19:38:54.077+03:00  INFO 20052 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-22T19:38:54.077+03:00  INFO 20052 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-22T19:38:54.124+03:00  INFO 20052 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-22T19:38:54.124+03:00  INFO 20052 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1532 ms
+2024-10-22T19:38:54.250+03:00  INFO 20052 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-22T19:38:54.299+03:00  INFO 20052 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-22T19:38:54.322+03:00  INFO 20052 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-22T19:38:54.567+03:00  INFO 20052 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-22T19:38:54.592+03:00  INFO 20052 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-22T19:38:54.728+03:00  INFO 20052 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4eb1943b
+2024-10-22T19:38:54.730+03:00  INFO 20052 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-22T19:38:55.627+03:00  INFO 20052 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-22T19:38:55.683+03:00  INFO 20052 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-22T19:38:56.126+03:00  WARN 20052 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-22T19:38:56.139+03:00  WARN 20052 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 748efcb3-dee0-4c18-b609-b951184b33e6
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-10-22T19:38:56.151+03:00  INFO 20052 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-10-22T19:38:56.655+03:00  INFO 20052 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/'
+2024-10-22T19:38:56.665+03:00  INFO 20052 --- [main] com.ajwalker.TierdYolApplication         : Started TierdYolApplication in 4.684 seconds (process running for 5.314)
+2024-10-22T19:39:00.772+03:00  INFO 20052 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-22T19:39:00.772+03:00  INFO 20052 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-22T19:39:00.772+03:00  INFO 20052 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-10-22T19:39:01.479+03:00  INFO 20052 --- [http-nio-9090-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 314 ms
+2024-10-22T19:39:11.877+03:00 ERROR 20052 --- [http-nio-9090-exec-7] c.a.exception.GlobalExcepitonHandler     : TÜM HATALARIN GEÇTİĞİ NOKTA....: Sunucuda beklenmeyen bir hata oldu. Lütfen tekrar deneyinnull
+2024-10-22T19:43:30.072+03:00  INFO 20052 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-22T19:43:30.075+03:00  INFO 20052 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-10-22T19:43:30.080+03:00  INFO 20052 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-10-22T19:53:24.470+03:00  INFO 5848 --- [main] com.ajwalker.TierdYolApplication         : Starting TierdYolApplication using Java 21.0.3 with PID 5848 (C:\intellij\SpringProjesi\TierdYoll-Spring\build\classes\java\main started by AHMET in C:\intellij\SpringProjesi\TierdYoll-Spring)
+2024-10-22T19:53:24.472+03:00  INFO 5848 --- [main] com.ajwalker.TierdYolApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-10-22T19:53:25.376+03:00  INFO 5848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-22T19:53:25.462+03:00  INFO 5848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 2 JPA repository interfaces.
+2024-10-22T19:53:26.050+03:00  INFO 5848 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-10-22T19:53:26.066+03:00  INFO 5848 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-22T19:53:26.066+03:00  INFO 5848 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-22T19:53:26.135+03:00  INFO 5848 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-22T19:53:26.135+03:00  INFO 5848 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1625 ms
+2024-10-22T19:53:26.339+03:00  INFO 5848 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-22T19:53:26.406+03:00  INFO 5848 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-22T19:53:26.438+03:00  INFO 5848 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-22T19:53:26.690+03:00  INFO 5848 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-22T19:53:26.712+03:00  INFO 5848 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-22T19:53:26.833+03:00  INFO 5848 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2b4829aa
+2024-10-22T19:53:26.834+03:00  INFO 5848 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-22T19:53:27.781+03:00  INFO 5848 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-22T19:53:27.827+03:00  INFO 5848 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-22T19:53:28.203+03:00  WARN 5848 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-22T19:53:28.218+03:00  WARN 5848 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 3258e7ac-627b-4826-bb7c-7a416c729898
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-10-22T19:53:28.229+03:00  INFO 5848 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-10-22T19:53:28.760+03:00  INFO 5848 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/'
+2024-10-22T19:53:28.767+03:00  INFO 5848 --- [main] com.ajwalker.TierdYolApplication         : Started TierdYolApplication in 4.669 seconds (process running for 5.283)
+2024-10-22T19:54:06.213+03:00  INFO 5848 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-22T19:54:06.213+03:00  INFO 5848 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-22T19:54:06.215+03:00  INFO 5848 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-10-22T19:54:06.740+03:00 ERROR 5848 --- [http-nio-9090-exec-1] c.a.exception.GlobalExcepitonHandler     : TÜM HATALARIN GEÇTİĞİ NOKTA....: Urun eklemek için admin yada satıcı olamanız gerekmektedirnull
+2024-10-22T19:54:20.879+03:00 ERROR 5848 --- [http-nio-9090-exec-3] c.a.exception.GlobalExcepitonHandler     : TÜM HATALARIN GEÇTİĞİ NOKTA....: Sunucuda beklenmeyen bir hata oldu. Lütfen tekrar deneyinnull
+2024-10-22T19:58:06.864+03:00  INFO 5848 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-22T19:58:06.867+03:00  INFO 5848 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-10-22T19:58:06.871+03:00  INFO 5848 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-10-22T19:58:26.703+03:00  INFO 7032 --- [main] com.ajwalker.TierdYolApplication         : Starting TierdYolApplication using Java 21.0.3 with PID 7032 (C:\intellij\SpringProjesi\TierdYoll-Spring\build\classes\java\main started by AHMET in C:\intellij\SpringProjesi\TierdYoll-Spring)
+2024-10-22T19:58:26.705+03:00  INFO 7032 --- [main] com.ajwalker.TierdYolApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-10-22T19:58:27.431+03:00  INFO 7032 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-22T19:58:27.504+03:00  INFO 7032 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 2 JPA repository interfaces.
+2024-10-22T19:58:27.930+03:00  INFO 7032 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-10-22T19:58:27.940+03:00  INFO 7032 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-22T19:58:27.941+03:00  INFO 7032 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-22T19:58:27.984+03:00  INFO 7032 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-22T19:58:27.985+03:00  INFO 7032 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1242 ms
+2024-10-22T19:58:28.098+03:00  INFO 7032 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-22T19:58:28.136+03:00  INFO 7032 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-22T19:58:28.181+03:00  INFO 7032 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-22T19:58:28.457+03:00  INFO 7032 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-22T19:58:28.480+03:00  INFO 7032 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-22T19:58:28.613+03:00  INFO 7032 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1a01ffff
+2024-10-22T19:58:28.614+03:00  INFO 7032 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-22T19:58:29.629+03:00  INFO 7032 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-22T19:58:29.694+03:00  INFO 7032 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-22T19:58:30.090+03:00  WARN 7032 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-22T19:58:30.106+03:00  WARN 7032 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 6881b0bc-c16b-4373-a540-c44334419659
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-10-22T19:58:30.118+03:00  INFO 7032 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-10-22T19:58:30.613+03:00  INFO 7032 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/'
+2024-10-22T19:58:30.619+03:00  INFO 7032 --- [main] com.ajwalker.TierdYolApplication         : Started TierdYolApplication in 4.319 seconds (process running for 4.818)
+2024-10-22T19:58:33.051+03:00  INFO 7032 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-22T19:58:33.051+03:00  INFO 7032 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-22T19:58:33.052+03:00  INFO 7032 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-10-22T19:58:33.848+03:00  INFO 7032 --- [http-nio-9090-exec-2] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 334 ms
+2024-10-22T20:00:04.186+03:00  INFO 7032 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-22T20:00:04.190+03:00  INFO 7032 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-10-22T20:00:04.194+03:00  INFO 7032 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-10-22T20:00:48.701+03:00  INFO 25520 --- [main] com.ajwalker.TierdYolApplication         : Starting TierdYolApplication using Java 21.0.3 with PID 25520 (C:\intellij\SpringProjesi\TierdYoll-Spring\build\classes\java\main started by AHMET in C:\intellij\SpringProjesi\TierdYoll-Spring)
+2024-10-22T20:00:48.703+03:00  INFO 25520 --- [main] com.ajwalker.TierdYolApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-10-22T20:00:49.403+03:00  INFO 25520 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-22T20:00:49.459+03:00  INFO 25520 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 2 JPA repository interfaces.
+2024-10-22T20:00:49.860+03:00  INFO 25520 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-10-22T20:00:49.871+03:00  INFO 25520 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-22T20:00:49.871+03:00  INFO 25520 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-22T20:00:49.912+03:00  INFO 25520 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-22T20:00:49.913+03:00  INFO 25520 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1172 ms
+2024-10-22T20:00:50.020+03:00  INFO 25520 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-22T20:00:50.074+03:00  INFO 25520 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-22T20:00:50.103+03:00  INFO 25520 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-22T20:00:50.384+03:00  INFO 25520 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-22T20:00:50.406+03:00  INFO 25520 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-22T20:00:50.532+03:00  INFO 25520 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@208e5b23
+2024-10-22T20:00:50.534+03:00  INFO 25520 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-22T20:00:51.423+03:00  INFO 25520 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-22T20:00:51.472+03:00  INFO 25520 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-22T20:00:51.874+03:00  WARN 25520 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-22T20:00:51.888+03:00  WARN 25520 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 0f4bcaf8-6144-40b5-ba70-3160bf18fba2
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-10-22T20:00:51.899+03:00  INFO 25520 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-10-22T20:00:52.362+03:00  INFO 25520 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/'
+2024-10-22T20:00:52.369+03:00  INFO 25520 --- [main] com.ajwalker.TierdYolApplication         : Started TierdYolApplication in 4.082 seconds (process running for 4.649)
+2024-10-22T20:00:55.231+03:00  INFO 25520 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-22T20:00:55.231+03:00  INFO 25520 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-22T20:00:55.233+03:00  INFO 25520 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-10-22T20:00:55.837+03:00  INFO 25520 --- [http-nio-9090-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 377 ms
+2024-10-22T20:03:21.348+03:00  INFO 25520 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-22T20:03:21.350+03:00  INFO 25520 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-10-22T20:03:21.354+03:00  INFO 25520 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-10-22T20:03:26.165+03:00  INFO 3172 --- [main] com.ajwalker.TierdYolApplication         : Starting TierdYolApplication using Java 21.0.3 with PID 3172 (C:\intellij\SpringProjesi\TierdYoll-Spring\build\classes\java\main started by AHMET in C:\intellij\SpringProjesi\TierdYoll-Spring)
+2024-10-22T20:03:26.166+03:00  INFO 3172 --- [main] com.ajwalker.TierdYolApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-10-22T20:03:26.930+03:00  INFO 3172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-22T20:03:26.991+03:00  INFO 3172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 2 JPA repository interfaces.
+2024-10-22T20:03:27.437+03:00  INFO 3172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-10-22T20:03:27.450+03:00  INFO 3172 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-22T20:03:27.450+03:00  INFO 3172 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-22T20:03:27.496+03:00  INFO 3172 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-22T20:03:27.496+03:00  INFO 3172 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1297 ms
+2024-10-22T20:03:27.614+03:00  INFO 3172 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-22T20:03:27.653+03:00  INFO 3172 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-22T20:03:27.708+03:00  INFO 3172 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-22T20:03:27.969+03:00  INFO 3172 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-22T20:03:27.997+03:00  INFO 3172 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-22T20:03:28.122+03:00  INFO 3172 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@794d28a3
+2024-10-22T20:03:28.124+03:00  INFO 3172 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-22T20:03:29.020+03:00  INFO 3172 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-22T20:03:29.069+03:00  INFO 3172 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-22T20:03:29.465+03:00  WARN 3172 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-22T20:03:29.480+03:00  WARN 3172 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 495c4edf-f2ae-49d7-8e74-a0aacfe9a776
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-10-22T20:03:29.490+03:00  INFO 3172 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-10-22T20:03:29.998+03:00  INFO 3172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/'
+2024-10-22T20:03:30.005+03:00  INFO 3172 --- [main] com.ajwalker.TierdYolApplication         : Started TierdYolApplication in 4.218 seconds (process running for 4.762)
+2024-10-22T20:03:36.125+03:00  INFO 3172 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-22T20:03:36.126+03:00  INFO 3172 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-22T20:03:36.127+03:00  INFO 3172 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-10-22T20:03:36.617+03:00  INFO 3172 --- [http-nio-9090-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 309 ms
+2024-10-22T20:03:45.930+03:00 ERROR 3172 --- [http-nio-9090-exec-5] c.a.exception.GlobalExcepitonHandler     : TÜM HATALARIN GEÇTİĞİ NOKTA....: Sunucuda beklenmeyen bir hata oldu. Lütfen tekrar deneyinnull
+2024-10-22T20:04:09.941+03:00 ERROR 3172 --- [http-nio-9090-exec-7] c.a.exception.GlobalExcepitonHandler     : TÜM HATALARIN GEÇTİĞİ NOKTA....: Sunucuda beklenmeyen bir hata oldu. Lütfen tekrar deneyinnull
+2024-10-22T20:04:23.394+03:00  INFO 3172 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-22T20:04:23.397+03:00  INFO 3172 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-10-22T20:04:23.399+03:00  INFO 3172 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-10-22T20:04:27.076+03:00  INFO 11020 --- [main] com.ajwalker.TierdYolApplication         : Starting TierdYolApplication using Java 21.0.3 with PID 11020 (C:\intellij\SpringProjesi\TierdYoll-Spring\build\classes\java\main started by AHMET in C:\intellij\SpringProjesi\TierdYoll-Spring)
+2024-10-22T20:04:27.079+03:00  INFO 11020 --- [main] com.ajwalker.TierdYolApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-10-22T20:04:27.856+03:00  INFO 11020 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-22T20:04:27.916+03:00  INFO 11020 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 2 JPA repository interfaces.
+2024-10-22T20:04:28.346+03:00  INFO 11020 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-10-22T20:04:28.356+03:00  INFO 11020 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-22T20:04:28.356+03:00  INFO 11020 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-22T20:04:28.400+03:00  INFO 11020 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-22T20:04:28.400+03:00  INFO 11020 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1266 ms
+2024-10-22T20:04:28.521+03:00  INFO 11020 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-22T20:04:28.564+03:00  INFO 11020 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-22T20:04:28.609+03:00  INFO 11020 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-22T20:04:28.919+03:00  INFO 11020 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-22T20:04:28.942+03:00  INFO 11020 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-22T20:04:29.068+03:00  INFO 11020 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5cf2f5d6
+2024-10-22T20:04:29.069+03:00  INFO 11020 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-22T20:04:30.039+03:00  INFO 11020 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-22T20:04:30.085+03:00  INFO 11020 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-22T20:04:30.471+03:00  WARN 11020 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-22T20:04:30.484+03:00  WARN 11020 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 914f4475-3cfb-4da7-84e1-cf95e362b1b3
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-10-22T20:04:30.493+03:00  INFO 11020 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-10-22T20:04:30.978+03:00  INFO 11020 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/'
+2024-10-22T20:04:30.984+03:00  INFO 11020 --- [main] com.ajwalker.TierdYolApplication         : Started TierdYolApplication in 4.316 seconds (process running for 4.915)
+2024-10-22T20:05:05.497+03:00  INFO 11020 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-22T20:05:05.501+03:00  INFO 11020 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-10-22T20:05:05.506+03:00  INFO 11020 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-10-22T20:05:08.292+03:00  INFO 21088 --- [main] com.ajwalker.TierdYolApplication         : Starting TierdYolApplication using Java 21.0.3 with PID 21088 (C:\intellij\SpringProjesi\TierdYoll-Spring\build\classes\java\main started by AHMET in C:\intellij\SpringProjesi\TierdYoll-Spring)
+2024-10-22T20:05:08.294+03:00  INFO 21088 --- [main] com.ajwalker.TierdYolApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-10-22T20:05:09.030+03:00  INFO 21088 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-22T20:05:09.085+03:00  INFO 21088 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 2 JPA repository interfaces.
+2024-10-22T20:05:09.494+03:00  INFO 21088 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-10-22T20:05:09.509+03:00  INFO 21088 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-22T20:05:09.510+03:00  INFO 21088 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-22T20:05:09.557+03:00  INFO 21088 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-22T20:05:09.558+03:00  INFO 21088 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1227 ms
+2024-10-22T20:05:09.685+03:00  INFO 21088 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-22T20:05:09.760+03:00  INFO 21088 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-22T20:05:09.795+03:00  INFO 21088 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-22T20:05:10.045+03:00  INFO 21088 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-22T20:05:10.067+03:00  INFO 21088 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-22T20:05:10.184+03:00  INFO 21088 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5cf2f5d6
+2024-10-22T20:05:10.185+03:00  INFO 21088 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-22T20:05:11.101+03:00  INFO 21088 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-22T20:05:11.143+03:00  INFO 21088 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-22T20:05:11.503+03:00  WARN 21088 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-22T20:05:11.517+03:00  WARN 21088 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: dd236041-7437-4804-a0f0-11a9a6d3c47b
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-10-22T20:05:11.526+03:00  INFO 21088 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-10-22T20:05:12.013+03:00  INFO 21088 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/'
+2024-10-22T20:05:12.020+03:00  INFO 21088 --- [main] com.ajwalker.TierdYolApplication         : Started TierdYolApplication in 4.092 seconds (process running for 4.655)
+2024-10-22T20:05:16.709+03:00  INFO 21088 --- [http-nio-9090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-22T20:05:16.709+03:00  INFO 21088 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-22T20:05:16.711+03:00  INFO 21088 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-10-22T20:05:17.206+03:00  INFO 21088 --- [http-nio-9090-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 301 ms
+2024-10-22T20:20:10.996+03:00  INFO 21088 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-22T20:20:10.998+03:00  INFO 21088 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-10-22T20:20:11.001+03:00  INFO 21088 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-10-22T20:20:14.561+03:00  INFO 15344 --- [main] com.ajwalker.TierdYolApplication         : Starting TierdYolApplication using Java 21.0.3 with PID 15344 (C:\intellij\SpringProjesi\TierdYoll-Spring\build\classes\java\main started by AHMET in C:\intellij\SpringProjesi\TierdYoll-Spring)
+2024-10-22T20:20:14.563+03:00  INFO 15344 --- [main] com.ajwalker.TierdYolApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-10-22T20:20:15.415+03:00  INFO 15344 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-22T20:20:15.488+03:00  INFO 15344 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 2 JPA repository interfaces.
+2024-10-22T20:20:15.964+03:00  INFO 15344 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-10-22T20:20:15.976+03:00  INFO 15344 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-22T20:20:15.977+03:00  INFO 15344 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-22T20:20:16.020+03:00  INFO 15344 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-22T20:20:16.020+03:00  INFO 15344 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1410 ms
+2024-10-22T20:20:16.143+03:00  INFO 15344 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-22T20:20:16.201+03:00  INFO 15344 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-22T20:20:16.268+03:00  INFO 15344 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-22T20:20:16.531+03:00  INFO 15344 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-22T20:20:16.555+03:00  INFO 15344 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-22T20:20:16.690+03:00  INFO 15344 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2b4829aa
+2024-10-22T20:20:16.691+03:00  INFO 15344 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-22T20:20:17.678+03:00  INFO 15344 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-22T20:20:17.735+03:00  INFO 15344 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-22T20:20:18.137+03:00  WARN 15344 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-22T20:20:18.153+03:00  WARN 15344 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: ef0fc3f6-99b2-4347-bf6e-69763a97bfc2
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-10-22T20:20:18.163+03:00  INFO 15344 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-10-22T20:20:18.662+03:00  INFO 15344 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/'
+2024-10-22T20:20:18.669+03:00  INFO 15344 --- [main] com.ajwalker.TierdYolApplication         : Started TierdYolApplication in 4.516 seconds (process running for 5.087)
+2024-10-22T20:20:25.707+03:00  INFO 15344 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-22T20:20:25.707+03:00  INFO 15344 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-22T20:20:25.708+03:00  INFO 15344 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-10-22T20:20:26.241+03:00  INFO 15344 --- [http-nio-9090-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 364 ms
+2024-10-22T20:20:34.977+03:00 ERROR 15344 --- [http-nio-9090-exec-5] c.a.exception.GlobalExcepitonHandler     : TÜM HATALARIN GEÇTİĞİ NOKTA....: Urun eklemek için admin yada satıcı olamanız gerekmektedirnull
+2024-10-22T20:20:47.868+03:00 ERROR 15344 --- [http-nio-9090-exec-7] c.a.exception.GlobalExcepitonHandler     : TÜM HATALARIN GEÇTİĞİ NOKTA....: Urun eklemek için admin yada satıcı olamanız gerekmektedirnull
+2024-10-22T20:30:28.118+03:00  INFO 15344 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-22T20:30:28.123+03:00  INFO 15344 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-10-22T20:30:28.127+03:00  INFO 15344 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-10-22T20:30:31.960+03:00  INFO 9668 --- [main] com.ajwalker.TierdYolApplication         : Starting TierdYolApplication using Java 21.0.3 with PID 9668 (C:\intellij\SpringProjesi\TierdYoll-Spring\build\classes\java\main started by AHMET in C:\intellij\SpringProjesi\TierdYoll-Spring)
+2024-10-22T20:30:31.964+03:00  INFO 9668 --- [main] com.ajwalker.TierdYolApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-10-22T20:30:32.762+03:00  INFO 9668 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-22T20:30:32.827+03:00  INFO 9668 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 2 JPA repository interfaces.
+2024-10-22T20:30:33.303+03:00  INFO 9668 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-10-22T20:30:33.314+03:00  INFO 9668 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-22T20:30:33.314+03:00  INFO 9668 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-22T20:30:33.354+03:00  INFO 9668 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-22T20:30:33.354+03:00  INFO 9668 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1346 ms
+2024-10-22T20:30:33.464+03:00  INFO 9668 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-22T20:30:33.521+03:00  INFO 9668 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-22T20:30:33.555+03:00  INFO 9668 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-22T20:30:33.842+03:00  INFO 9668 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-22T20:30:33.865+03:00  INFO 9668 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-22T20:30:33.996+03:00  INFO 9668 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4f6fd101
+2024-10-22T20:30:33.998+03:00  INFO 9668 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-22T20:30:34.941+03:00  INFO 9668 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-22T20:30:34.990+03:00  INFO 9668 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-22T20:30:35.214+03:00  INFO 9668 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-22T20:30:35.778+03:00  WARN 9668 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-22T20:30:35.790+03:00  WARN 9668 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 117467d1-3116-420e-b795-6b3122bfd8b5
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-10-22T20:30:35.802+03:00  INFO 9668 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-10-22T20:30:36.296+03:00  INFO 9668 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/'
+2024-10-22T20:30:36.302+03:00  INFO 9668 --- [main] com.ajwalker.TierdYolApplication         : Started TierdYolApplication in 4.752 seconds (process running for 5.338)
+2024-10-22T20:30:40.489+03:00  INFO 9668 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-22T20:30:40.490+03:00  INFO 9668 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-22T20:30:40.492+03:00  INFO 9668 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-10-22T20:30:41.302+03:00  INFO 9668 --- [http-nio-9090-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 339 ms
+2024-10-22T20:39:55.710+03:00  INFO 9668 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-22T20:39:55.713+03:00  INFO 9668 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-10-22T20:39:55.716+03:00  INFO 9668 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-10-22T20:40:00.363+03:00  INFO 4032 --- [main] com.ajwalker.TierdYolApplication         : Starting TierdYolApplication using Java 21.0.3 with PID 4032 (C:\intellij\SpringProjesi\TierdYoll-Spring\build\classes\java\main started by AHMET in C:\intellij\SpringProjesi\TierdYoll-Spring)
+2024-10-22T20:40:00.366+03:00  INFO 4032 --- [main] com.ajwalker.TierdYolApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-10-22T20:40:01.161+03:00  INFO 4032 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-22T20:40:01.237+03:00  INFO 4032 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 2 JPA repository interfaces.
+2024-10-22T20:40:01.723+03:00  INFO 4032 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-10-22T20:40:01.748+03:00  INFO 4032 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-22T20:40:01.749+03:00  INFO 4032 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-22T20:40:01.849+03:00  INFO 4032 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-22T20:40:01.850+03:00  INFO 4032 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1429 ms
+2024-10-22T20:40:02.044+03:00  INFO 4032 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-22T20:40:02.100+03:00  INFO 4032 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-22T20:40:02.125+03:00  INFO 4032 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-22T20:40:02.448+03:00  INFO 4032 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-22T20:40:02.486+03:00  INFO 4032 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-22T20:40:02.643+03:00  INFO 4032 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@208e5b23
+2024-10-22T20:40:02.645+03:00  INFO 4032 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-22T20:40:03.763+03:00  INFO 4032 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-22T20:40:03.821+03:00  INFO 4032 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-22T20:40:04.040+03:00  INFO 4032 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-22T20:40:04.606+03:00  WARN 4032 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-22T20:40:04.622+03:00  WARN 4032 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 20886104-b88a-4aec-9c96-b887edf6fe28
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-10-22T20:40:04.634+03:00  INFO 4032 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-10-22T20:40:05.232+03:00  INFO 4032 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/'
+2024-10-22T20:40:05.239+03:00  INFO 4032 --- [main] com.ajwalker.TierdYolApplication         : Started TierdYolApplication in 5.353 seconds (process running for 5.97)
+2024-10-22T20:40:05.248+03:00  INFO 4032 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-22T20:40:05.249+03:00  INFO 4032 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-10-22T20:40:05.252+03:00  INFO 4032 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-10-22T20:40:34.665+03:00  INFO 12272 --- [main] com.ajwalker.TierdYolApplication         : Starting TierdYolApplication using Java 21.0.3 with PID 12272 (C:\intellij\SpringProjesi\TierdYoll-Spring\build\classes\java\main started by AHMET in C:\intellij\SpringProjesi\TierdYoll-Spring)
+2024-10-22T20:40:34.667+03:00  INFO 12272 --- [main] com.ajwalker.TierdYolApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-10-22T20:40:35.473+03:00  INFO 12272 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-22T20:40:35.536+03:00  INFO 12272 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 2 JPA repository interfaces.
+2024-10-22T20:40:35.968+03:00  INFO 12272 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-10-22T20:40:35.978+03:00  INFO 12272 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-22T20:40:35.978+03:00  INFO 12272 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-22T20:40:36.020+03:00  INFO 12272 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-22T20:40:36.022+03:00  INFO 12272 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1311 ms
+2024-10-22T20:40:36.144+03:00  INFO 12272 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-22T20:40:36.201+03:00  INFO 12272 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-22T20:40:36.237+03:00  INFO 12272 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-22T20:40:36.540+03:00  INFO 12272 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-22T20:40:36.566+03:00  INFO 12272 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-22T20:40:36.698+03:00  INFO 12272 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@11c3ce6a
+2024-10-22T20:40:36.699+03:00  INFO 12272 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-22T20:40:37.646+03:00  INFO 12272 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-22T20:40:37.694+03:00  INFO 12272 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-22T20:40:37.896+03:00  INFO 12272 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-22T20:40:38.433+03:00  WARN 12272 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-22T20:40:38.446+03:00  WARN 12272 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 115c2d48-6aff-47ea-aa00-30061f4d71fc
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-10-22T20:40:38.457+03:00  INFO 12272 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-10-22T20:40:38.978+03:00  INFO 12272 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/'
+2024-10-22T20:40:38.986+03:00  INFO 12272 --- [main] com.ajwalker.TierdYolApplication         : Started TierdYolApplication in 4.725 seconds (process running for 5.294)
+2024-10-22T20:40:53.290+03:00  INFO 12272 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-22T20:40:53.290+03:00  INFO 12272 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-22T20:40:53.293+03:00  INFO 12272 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-10-22T20:40:54.155+03:00  INFO 12272 --- [http-nio-9090-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 476 ms
+2024-10-22T20:42:53.157+03:00  INFO 12272 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-22T20:42:53.159+03:00  INFO 12272 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-10-22T20:42:53.163+03:00  INFO 12272 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-10-22T20:42:56.883+03:00  INFO 13216 --- [main] com.ajwalker.TierdYolApplication         : Starting TierdYolApplication using Java 21.0.3 with PID 13216 (C:\intellij\SpringProjesi\TierdYoll-Spring\build\classes\java\main started by AHMET in C:\intellij\SpringProjesi\TierdYoll-Spring)
+2024-10-22T20:42:56.885+03:00  INFO 13216 --- [main] com.ajwalker.TierdYolApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-10-22T20:42:57.796+03:00  INFO 13216 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-22T20:42:57.862+03:00  INFO 13216 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 2 JPA repository interfaces.
+2024-10-22T20:42:58.333+03:00  INFO 13216 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-10-22T20:42:58.344+03:00  INFO 13216 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-22T20:42:58.344+03:00  INFO 13216 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-22T20:42:58.387+03:00  INFO 13216 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-22T20:42:58.388+03:00  INFO 13216 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1451 ms
+2024-10-22T20:42:58.506+03:00  INFO 13216 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-22T20:42:58.570+03:00  INFO 13216 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-22T20:42:58.618+03:00  INFO 13216 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-22T20:42:58.881+03:00  INFO 13216 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-22T20:42:58.908+03:00  INFO 13216 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-22T20:42:59.038+03:00  INFO 13216 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@22899683
+2024-10-22T20:42:59.039+03:00  INFO 13216 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-22T20:42:59.989+03:00  INFO 13216 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-22T20:43:00.037+03:00  INFO 13216 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-22T20:43:00.225+03:00  INFO 13216 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-22T20:43:00.755+03:00  WARN 13216 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-22T20:43:00.769+03:00  WARN 13216 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: eaea82ff-13de-4158-9be9-2402e7a4961a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-10-22T20:43:00.780+03:00  INFO 13216 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-10-22T20:43:01.288+03:00  INFO 13216 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/'
+2024-10-22T20:43:01.295+03:00  INFO 13216 --- [main] com.ajwalker.TierdYolApplication         : Started TierdYolApplication in 4.833 seconds (process running for 5.423)
+2024-10-22T20:43:11.363+03:00  INFO 13216 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-22T20:43:11.364+03:00  INFO 13216 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-22T20:43:11.367+03:00  INFO 13216 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-10-22T20:45:11.343+03:00  INFO 13216 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-22T20:45:11.345+03:00  INFO 13216 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-10-22T20:45:11.348+03:00  INFO 13216 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-10-22T20:45:15.237+03:00  INFO 25088 --- [main] com.ajwalker.TierdYolApplication         : Starting TierdYolApplication using Java 21.0.3 with PID 25088 (C:\intellij\SpringProjesi\TierdYoll-Spring\build\classes\java\main started by AHMET in C:\intellij\SpringProjesi\TierdYoll-Spring)
+2024-10-22T20:45:15.240+03:00  INFO 25088 --- [main] com.ajwalker.TierdYolApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-10-22T20:45:16.078+03:00  INFO 25088 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-22T20:45:16.142+03:00  INFO 25088 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 2 JPA repository interfaces.
+2024-10-22T20:45:16.621+03:00  INFO 25088 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-10-22T20:45:16.635+03:00  INFO 25088 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-22T20:45:16.635+03:00  INFO 25088 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-22T20:45:16.694+03:00  INFO 25088 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-22T20:45:16.695+03:00  INFO 25088 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1410 ms
+2024-10-22T20:45:16.832+03:00  INFO 25088 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-22T20:45:16.893+03:00  INFO 25088 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-22T20:45:16.930+03:00  INFO 25088 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-22T20:45:17.234+03:00  INFO 25088 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-22T20:45:17.257+03:00  INFO 25088 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-22T20:45:17.381+03:00  INFO 25088 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1a3b1f7e
+2024-10-22T20:45:17.383+03:00  INFO 25088 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-22T20:45:18.470+03:00  INFO 25088 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-22T20:45:18.530+03:00  INFO 25088 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-22T20:45:18.729+03:00  INFO 25088 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-22T20:45:19.353+03:00  WARN 25088 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-22T20:45:19.375+03:00  WARN 25088 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 9e81c0ad-fc7b-4f4b-916b-7aba39e5dd07
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-10-22T20:45:19.386+03:00  INFO 25088 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-10-22T20:45:19.986+03:00  INFO 25088 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/'
+2024-10-22T20:45:19.994+03:00  INFO 25088 --- [main] com.ajwalker.TierdYolApplication         : Started TierdYolApplication in 5.166 seconds (process running for 5.764)
+2024-10-22T20:45:23.066+03:00  INFO 25088 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-22T20:45:23.066+03:00  INFO 25088 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-22T20:45:23.068+03:00  INFO 25088 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-10-22T20:45:23.881+03:00  INFO 25088 --- [http-nio-9090-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 339 ms
+2024-10-22T20:45:37.780+03:00 ERROR 25088 --- [http-nio-9090-exec-6] c.a.exception.GlobalExcepitonHandler     : TÜM HATALARIN GEÇTİĞİ NOKTA....: Urun eklemek için admin yada satıcı olamanız gerekmektedirnull
+2024-10-22T20:57:32.130+03:00  INFO 25088 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-22T20:57:32.134+03:00  INFO 25088 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-10-22T20:57:32.138+03:00  INFO 25088 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-10-22T20:57:36.352+03:00  INFO 25168 --- [main] com.ajwalker.TierdYolApplication         : Starting TierdYolApplication using Java 21.0.3 with PID 25168 (C:\intellij\SpringProjesi\TierdYoll-Spring\build\classes\java\main started by AHMET in C:\intellij\SpringProjesi\TierdYoll-Spring)
+2024-10-22T20:57:36.358+03:00  INFO 25168 --- [main] com.ajwalker.TierdYolApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-10-22T20:57:37.197+03:00  INFO 25168 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-22T20:57:37.265+03:00  INFO 25168 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 2 JPA repository interfaces.
+2024-10-22T20:57:37.726+03:00  INFO 25168 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-10-22T20:57:37.737+03:00  INFO 25168 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-22T20:57:37.737+03:00  INFO 25168 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-22T20:57:37.783+03:00  INFO 25168 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-22T20:57:37.784+03:00  INFO 25168 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1351 ms
+2024-10-22T20:57:37.905+03:00  INFO 25168 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-22T20:57:37.977+03:00  INFO 25168 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-22T20:57:38.013+03:00  INFO 25168 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-22T20:57:38.292+03:00  INFO 25168 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-22T20:57:38.317+03:00  INFO 25168 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-22T20:57:38.489+03:00  INFO 25168 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@794d28a3
+2024-10-22T20:57:38.491+03:00  INFO 25168 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-22T20:57:39.511+03:00  INFO 25168 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-22T20:57:39.573+03:00  INFO 25168 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-22T20:57:39.812+03:00  INFO 25168 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-22T20:57:40.346+03:00  WARN 25168 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-22T20:57:40.371+03:00  WARN 25168 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 177ecdbe-961a-4589-b147-e6d0711009e4
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-10-22T20:57:40.386+03:00  INFO 25168 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-10-22T20:57:40.956+03:00  INFO 25168 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/'
+2024-10-22T20:57:40.962+03:00  INFO 25168 --- [main] com.ajwalker.TierdYolApplication         : Started TierdYolApplication in 5.114 seconds (process running for 5.726)
+2024-10-22T20:57:51.759+03:00  INFO 25168 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-22T20:57:51.759+03:00  INFO 25168 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-22T20:57:51.760+03:00  INFO 25168 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-10-22T20:57:52.598+03:00  INFO 25168 --- [http-nio-9090-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 440 ms

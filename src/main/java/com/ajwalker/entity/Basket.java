@@ -29,5 +29,7 @@ public class Basket extends BaseEntity {
     @Column(name = "unit_price")
     Long unitPrice;
     Long quantity;
+    
+    
 
 }
