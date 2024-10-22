@@ -9,6 +9,7 @@ import com.ajwalker.mapper.UserMapper;
 import com.ajwalker.repository.UserRepository;
 import com.ajwalker.utility.JwtManager;
 import com.ajwalker.utility.enums.EState;
+import com.ajwalker.utility.enums.EUserStatus;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -73,4 +74,10 @@ public class UserService {
     public void save(User user) {
         userRepository.save(user);
     }
+    
+    public EUserStatus findUserStatusByUserId(Long userId){
+        return userRepository.findById(userId).map(User::getUserStatus).orElse(null);
+    }
+    
+    
 }

@@ -1,6 +1,7 @@
 package com.ajwalker.repository;
 
 import com.ajwalker.entity.User;
+import com.ajwalker.utility.enums.EUserStatus;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
@@ -12,4 +13,8 @@ import java.util.Optional;
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
 	Optional<User> findOptionalByUsernameAndPassword(String userName, String password);
+	
+	Optional<User> findByUserStatus(EUserStatus status);
+	
+	
 }
