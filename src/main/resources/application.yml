@@ -23,15 +23,6 @@ spring:
           starttls:
             enable: true
 
-logging:
-  file:
-    name: proje.log
-  level:
-    root: info
-  logback:
-    rollingpolicy:
-      max-file-size: 2MB
-
 
 java15:
   jwt:
