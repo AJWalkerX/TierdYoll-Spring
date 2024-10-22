@@ -49,7 +49,7 @@ public class UserService {
     
     
     public String doLogin(DologinRequestDto dto) {
-     Optional<User> userOptional= userRepository.findOptionalByUsernameAndPassword(dto.username(), dto.password());
+     Optional<User> userOptional= userRepository.findOptionalByUsername(dto.username());
      if ( userOptional.isEmpty() || (!passwordEncoder.matches(dto.password(), userOptional.get().getPassword()))) {
          throw new TierdYolException(ErrorType.LOGIN_ERROR);
      }
