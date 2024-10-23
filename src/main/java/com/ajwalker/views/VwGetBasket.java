@@ -13,6 +13,5 @@ import lombok.NoArgsConstructor;
 public class VwGetBasket {
     Long id;
     Long userId;
-    Long productId;
-    Long quantity;
+
 }

@@ -1,6 +1,5 @@
 package com.ajwalker.service;
 
-
 import com.ajwalker.dto.request.AddProductToBasketRequestDto;
 import com.ajwalker.entity.Basket;
 import com.ajwalker.entity.BasketProduct;
@@ -22,8 +21,7 @@ public class BasketService {
     private final BasketRepository basketRepository;
     private final ProductService productService;
     private final UserService userService;
-
-    
+    private final BasketProductService basketProductService;
 
     public void addProductToBasket(AddProductToBasketRequestDto dto) {
         Optional<User> optionalUser = userService.findById(dto.userId());
@@ -46,10 +44,10 @@ public class BasketService {
                basketProduct.setProductId(product.getId());
                basketProduct.setQuantity(dto.quantity());
                basketProduct.setUnitPrice(basketProduct.getUnitPrice());
-               
-               
-             
-            
+               basketProductService.addProductToCart(basketProduct);
+
+
+
         }
     }
 
