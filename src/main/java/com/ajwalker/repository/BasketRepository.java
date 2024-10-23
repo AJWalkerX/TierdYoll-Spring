@@ -4,10 +4,12 @@ import com.ajwalker.entity.Basket;
 import com.ajwalker.entity.User;
 import com.ajwalker.utility.enums.EBasketState;
 import com.ajwalker.views.VwGetBasket;
+import com.ajwalker.views.VwGetBasketProduct;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
+import java.util.List;
 import java.util.Optional;
 
 public interface BasketRepository extends JpaRepository<Basket, Long> {
@@ -21,7 +23,7 @@ public interface BasketRepository extends JpaRepository<Basket, Long> {
             @Param("basketState") EBasketState basketState
     );
 
-    @Query("SELECT NEW com.ajwalker.views.VwGetBasket(b.id,b.userId) FROM Basket b WHERE b.id = :id")
-    Optional<VwGetBasket> findByBasketId(@Param("id") Long id);
+    @Query("SELECT NEW com.ajwalker.views.VwGetBasketProduct(bp.basketId,bp.productId,bp.quantity,bp.unitPrice) FROM BasketProduct bp WHERE bp.basketId = :id")
+    List<VwGetBasketProduct> findByBasketId(@Param("id") Long id);
 
 }
