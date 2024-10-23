@@ -1,6 +1,6 @@
 package com.ajwalker.entity;
 
-import com.ajwalker.utility.enums.EBasketState;
+
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -14,21 +14,14 @@ import lombok.experimental.SuperBuilder;
 @SuperBuilder
 @Data
 @Entity
-@Table(name = "tbl_basket")
-public class Basket extends BaseEntity {
+@Table(name = "tbl_basket_product")
+public class BasketProduct extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
-    @Column(name = "basket_state")
-    @Enumerated(EnumType.STRING)
-    EBasketState basketState;
-    @Column(name = "user_id")
-    Long userId;//customer
+    @Column(name = "basket_id")
+    Long basketId;
     @Column(name = "product_id")
     Long productId;
-    @Column(name = "unit_price")
-    Long unitPrice;
-    Long quantity;
-
 
 }

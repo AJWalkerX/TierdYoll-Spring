@@ -17,5 +17,6 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
 	
 	@Query("SELECT NEW com.ajwalker.views.VwProductDetails(p.name, p.productCode, p.price, p.userId, p.stock, p.category) FROM Product p WHERE p.productCode = :productCode")
 	Optional<VwProductDetails> findByProductCode(@Param("productCode") String productCode);
-	
+
+	Optional<Product> findById(Long id);
 }

@@ -10,7 +10,6 @@ import com.ajwalker.repository.UserRepository;
 import com.ajwalker.utility.JwtManager;
 import com.ajwalker.utility.enums.EState;
 import com.ajwalker.utility.enums.EUserStatus;
-import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -68,13 +67,12 @@ public class UserService {
 
     public void resetPassword(String token, String newPassword) {
         Long userId = validateToken(token);
-        User user = findById(userId);
+        User user = findByIdRegisteration(userId);
         user.setPassword(passwordEncoder.encode(newPassword));
         userRepository.save(user);
     }
 
-
-    public User findById(Long authId) {
+    public User findByIdRegisteration(Long authId) {
         Optional<User> userOptional = userRepository.findById(authId);
         if (userOptional.isEmpty()) {
             throw new TierdYolException(ErrorType.NOTFOUND_USER);
@@ -84,6 +82,11 @@ public class UserService {
             throw new TierdYolException(ErrorType.USER_ALREADY_ACTIVE_ERROR);
         }
         return user;
+    }
+
+    public Optional<User> findById(Long id){
+        Optional<User> userOptional = userRepository.findById(id);
+        return userOptional;
     }
 
     public void save(User user) {

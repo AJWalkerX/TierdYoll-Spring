@@ -10,16 +10,12 @@ import com.ajwalker.exception.ErrorType;
 import com.ajwalker.exception.TierdYolException;
 import com.ajwalker.service.MailSenderService;
 import com.ajwalker.service.UserService;
-import com.ajwalker.utility.JwtManager;
 import com.ajwalker.utility.enums.EState;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-
-import java.util.Optional;
-import java.util.UUID;
 
 import static com.ajwalker.constant.RestApis.*;
 
@@ -63,7 +59,7 @@ public class UserController {
     @GetMapping(VERIFY)
     public ResponseEntity<BaseResponse<Boolean>> verifyEmail(@RequestParam("token") String token) {
         Long authId = userService.validateToken(token);
-        User user = userService.findById(authId);
+        User user = userService.findByIdRegisteration(authId);
         user.setState(EState.ACTIVE);
         userService.save(user);
         return ResponseEntity.ok(BaseResponse.<Boolean>builder()
