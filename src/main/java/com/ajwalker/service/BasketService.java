@@ -1,6 +1,7 @@
 package com.ajwalker.service;
 
 import com.ajwalker.dto.request.AddProductToBasketRequestDto;
+import com.ajwalker.dto.request.DeleteBasketProductRequestDto;
 import com.ajwalker.entity.Basket;
 import com.ajwalker.entity.BasketProduct;
 import com.ajwalker.entity.Product;
@@ -9,10 +10,13 @@ import com.ajwalker.exception.ErrorType;
 import com.ajwalker.exception.TierdYolException;
 import com.ajwalker.repository.BasketRepository;
 import com.ajwalker.utility.enums.EBasketState;
-import com.ajwalker.views.VwGetBasket;
+import com.ajwalker.utility.enums.EUserStatus;
+import com.ajwalker.views.VwGetBasketProduct;
+
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -40,23 +44,33 @@ public class BasketService {
                 basketRepository.save(basket);
             }
             BasketProduct basketProduct = new BasketProduct();
-               basketProduct.setBasketId(basket.getId());
-               basketProduct.setProductId(product.getId());
-               basketProduct.setQuantity(dto.quantity());
-               basketProduct.setUnitPrice(basketProduct.getUnitPrice());
-               basketProductService.addProductToCart(basketProduct);
-
+            basketProduct.setBasketId(basket.getId());
+            basketProduct.setProductId(product.getId());
+            basketProduct.setQuantity(dto.quantity());
+            basketProduct.setUnitPrice(product.getPrice());
+            basketProductService.addProductToCart(basketProduct);
 
 
         }
     }
 
 
-    public Optional<VwGetBasket> getBasket(Long Id) {
-        Optional<VwGetBasket> optionalBasket = basketRepository.findByBasketId(Id);
-        if (optionalBasket.isEmpty()) {
+    public List<VwGetBasketProduct> getBasket(Long userId) {
+        Basket basket = basketRepository.findByUserAndBasketState(userId, EBasketState.ACTIVE);
+        if (basket == null) {
             throw new TierdYolException(ErrorType.NOT_FOUND_BASKET);
         }
-        return optionalBasket;
+        List<VwGetBasketProduct> basketProducts = basketProductService.findByBasketId(basket.getId());
+
+        return basketProducts;
+    }
+
+    public void deleteBasketInProduct(DeleteBasketProductRequestDto dto) {
+        EUserStatus userStatus = userService.findUserStatusByUserId(dto.id());
+
+//        Optional<BasketProduct> Id = basketProductService.findByBasketId(dto.id());
+//        if (Id.isEmpty()){
+//            throw new TierdYolException(ErrorType.NOT_FOUNT_PRODUCT);
+//        }
     }
 }
