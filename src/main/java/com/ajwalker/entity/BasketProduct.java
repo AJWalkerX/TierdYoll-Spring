@@ -23,5 +23,7 @@ public class BasketProduct extends BaseEntity {
     Long basketId;
     @Column(name = "product_id")
     Long productId;
-
+    @Column(name = "unit_price")
+    Long unitPrice;
+    Long quantity;
 }
