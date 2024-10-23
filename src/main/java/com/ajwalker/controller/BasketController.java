@@ -16,17 +16,7 @@ import org.springframework.web.bind.annotation.*;
 @RequiredArgsConstructor
 public class BasketController {
     private final BasketService basketService;
-
-//    public ResponseEntity<BaseResponse<Boolean>> addProductToBasket(AddProductToBasketRequestDto dto) {
-//        basketService.addProductToBasket(dto);
-//        return ResponseEntity.ok(BaseResponse.<Boolean>builder()
-//                        .code(200)
-//                        .success(true)
-//                        .message("Product added successfully Basket")
-//                        .data(true)
-//                .build());
-//
-//    }
+    
 
     @PostMapping("/add")
     public ResponseEntity<BaseResponse<Boolean>> addProductToBasket(@RequestBody @Valid AddProductToBasketRequestDto dto) {

@@ -3,6 +3,7 @@ package com.ajwalker.service;
 
 import com.ajwalker.dto.request.AddProductToBasketRequestDto;
 import com.ajwalker.entity.Basket;
+import com.ajwalker.entity.BasketProduct;
 import com.ajwalker.entity.Product;
 import com.ajwalker.entity.User;
 import com.ajwalker.exception.ErrorType;
@@ -22,16 +23,7 @@ public class BasketService {
     private final ProductService productService;
     private final UserService userService;
 
-
-//    public void addProductToBasket(AddProductToBasketRequestDto dto) {
-//        User userId = userService.findById(dto.userId());
-//        Product productId = productService.findById(dto.productId());
-//
-//        Basket byUserIdAndBasketState = basketRepository.existByUserIdAndBasketState(userId, EBasketState.ACTIVE);
-//
-//
-//
-//    }
+    
 
     public void addProductToBasket(AddProductToBasketRequestDto dto) {
         Optional<User> optionalUser = userService.findById(dto.userId());
@@ -47,19 +39,17 @@ public class BasketService {
                 basket = new Basket();
                 basket.setUserId(dto.userId());
                 basket.setBasketState(EBasketState.ACTIVE);
-                basket.setProductId(dto.productId());
-                basket.setQuantity(dto.quantity());
-                basket.setUnitPrice(product.getPrice());
-                basketRepository.save(basket);
-            } else {
-
-                basket.setProductId(dto.productId());
-                basket.setQuantity(dto.quantity());
-                basket.setUnitPrice(product.getPrice());
                 basketRepository.save(basket);
             }
-        } else {
-            throw new RuntimeException("Kullanıcı veya Ürün bulunamadı");
+            BasketProduct basketProduct = new BasketProduct();
+               basketProduct.setBasketId(basket.getId());
+               basketProduct.setProductId(product.getId());
+               basketProduct.setQuantity(dto.quantity());
+               basketProduct.setUnitPrice(basketProduct.getUnitPrice());
+               
+               
+             
+            
         }
     }
 

@@ -24,11 +24,7 @@ public class Basket extends BaseEntity {
     EBasketState basketState;
     @Column(name = "user_id")
     Long userId;//customer
-    @Column(name = "product_id")
-    Long productId;
-    @Column(name = "unit_price")
-    Long unitPrice;
-    Long quantity;
+    
 
 
 }
