@@ -16,6 +16,7 @@ import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.Optional;
 
@@ -24,13 +25,17 @@ import java.util.Optional;
 public class ProductService {
 	private final ProductRepository productRepository;
 	private final UserService userService;
-	
-	public void addProduct(AddProductRequestDto dto) {
+	private final PhotoUploadService photoUploadService;
+
+	public void addProduct(AddProductRequestDto dto) throws IOException {
 		EUserStatus userStatus = userService.findUserStatusByUserId(dto.userId());
 		if (userStatus !=EUserStatus.ADMIN && userStatus !=EUserStatus.SELLER){
 			throw new TierdYolException(ErrorType.INVALID_STATUS);
 		}
-		productRepository.save(ProductMapper.INSTANCE.fromAddProductRequestDto(dto));
+
+		Product product = productRepository.save(ProductMapper.INSTANCE.fromAddProductRequestDto(dto));
+		String url = photoUploadService.uploadPhoto(dto.file());
+		photoUploadService.save(url, product.getId());
 	}
 	
 	public List<VwProduct> getAllProducts() {

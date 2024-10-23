@@ -14,7 +14,7 @@ import lombok.experimental.SuperBuilder;
 @Data
 @Entity
 @Table(name = "tbl_photos")
-public class Photos extends BaseEntity{
+public class Photo extends BaseEntity{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
