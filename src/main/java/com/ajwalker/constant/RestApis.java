@@ -15,4 +15,5 @@ public class RestApis {
     public static final String DOLOGIN = "/do-login";
     public static final String RESET_PASSWORD = "/reset-password";
     public static final String FORGOT_PASSWORD = "/forgot-password";
+    public static final String FILTER = "/filter";
 }

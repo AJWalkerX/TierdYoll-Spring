@@ -2,8 +2,13 @@ package com.ajwalker.entity;
 
 
 import com.ajwalker.utility.ProductCodeGeneratable;
+import com.ajwalker.utility.enums.EBrand;
 import com.ajwalker.utility.enums.ECategory;
+import com.ajwalker.utility.enums.EColor;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.DecimalMax;
+import jakarta.validation.constraints.DecimalMin;
+import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -30,5 +35,11 @@ public class Product extends BaseEntity implements ProductCodeGeneratable {
     Integer stock;
     @Enumerated(EnumType.STRING)
     ECategory category;
-
+    @Enumerated(EnumType.STRING)
+    EBrand brand;
+    @DecimalMin(value = "1.0", inclusive = true, message = "Rating must be at least 0.0")
+    @DecimalMax(value = "5.0", inclusive = true, message = "Rating must be at most 5.0")
+    Double rating;
+    @Enumerated(EnumType.STRING)
+    EColor color;
 }

@@ -19,7 +19,8 @@ public enum ErrorType {
     INVALID_STATUS(8001,"Urun eklemek için admin yada satıcı olamanız gerekmektedir",HttpStatus.BAD_REQUEST),
     NOT_FOUNT_PRODUCT(8002,"Aradığınız ürün bulunmamaktadır",HttpStatus.BAD_REQUEST),
     NOT_FOUNT_PRODUCT_CODE(8003,"Ürün kodu bulunmamaktadır",HttpStatus.BAD_REQUEST ),
-    NOT_FOUND_BASKET(5001,"Sepet bulunmamaktadır.",HttpStatus.BAD_REQUEST);
+    NOT_FOUND_BASKET(5001,"Sepet bulunmamaktadır.",HttpStatus.BAD_REQUEST),
+    PHOTO_SIZE_ERROR(8001,"Fotoğraf boyutu max 5MB olmalıdır!",HttpStatus.BAD_REQUEST);
 
 
     int code;

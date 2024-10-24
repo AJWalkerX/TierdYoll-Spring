@@ -2,6 +2,7 @@ package com.ajwalker.controller;
 
 import com.ajwalker.dto.request.AddProductRequestDto;
 import com.ajwalker.dto.request.DeleteProductRequestDto;
+import com.ajwalker.dto.request.ProductFilterDto;
 import com.ajwalker.dto.request.UpdateProductRequestDto;
 import com.ajwalker.dto.response.BaseResponse;
 import com.ajwalker.entity.BaseEntity;
@@ -17,6 +18,8 @@ import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
 import java.util.List;
+
+import static com.ajwalker.constant.RestApis.*;
 
 @RestController
 @RequestMapping("/v1/dev/product")
@@ -78,6 +81,15 @@ public class ProductController {
 				                         .data(true)
 		                                     .build());
 	}
-	
+
+	@PostMapping(FILTER)
+	public ResponseEntity<BaseResponse<List<Product>>> filterProducts(@RequestBody @Valid ProductFilterDto filterDto) {
+		return ResponseEntity.ok(BaseResponse.<List<Product>>builder()
+				.success(true)
+				.code(200)
+				.message("Product filtered")
+				.data(productService.filterProducts(filterDto))
+				.build());
+	}
 	
 }

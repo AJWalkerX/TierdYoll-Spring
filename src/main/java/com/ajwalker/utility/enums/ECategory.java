@@ -1,5 +1,11 @@
 package com.ajwalker.utility.enums;
 
 public enum ECategory {
-	CLOTHING
+	ELECTRONICS,
+	FASHION,
+	HOME_APPLIANCES,
+	BOOKS,
+	TOYS,
+	BEAUTY;
 }
+
