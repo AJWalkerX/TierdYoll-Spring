@@ -21,7 +21,5 @@ public interface BasketRepository extends JpaRepository<Basket, Long> {
             @Param("basketState") EBasketState basketState
     );
 
-    @Query("SELECT NEW com.ajwalker.views.VwGetBasketProduct(bp.basketId,bp.productId,bp.quantity,bp.unitPrice) FROM BasketProduct bp WHERE bp.basketId = :id")
-    List<VwGetBasketProduct> findByBasketId(@Param("id") Long id);
 
 }

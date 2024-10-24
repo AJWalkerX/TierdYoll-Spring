@@ -24,10 +24,6 @@ public class BasketProductService {
     public void addProductToCart(BasketProduct basketProduct) {
         basketProductRepository.save(basketProduct);
     }
-    //TODO return basketRepository.findByBasketId(basketId); hata düzeltilecek.
-    public List<VwGetBasketProduct> findByBasketId(Long basketId) {
-        return basketRepository.findByBasketId(basketId);
-    }
 
     public void deleteProductFromBasket(DeleteBasketProductRequestDto dto) {
         Optional<BasketProduct> optBasketProduct = basketProductRepository.findById(dto.id());
