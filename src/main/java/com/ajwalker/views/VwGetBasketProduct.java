@@ -14,4 +14,6 @@ public class VwGetBasketProduct {
     Long productId;
     Long quantity;
     Long unitPrice;
+    Long totalPrice = unitPrice * quantity;
+    
 }

@@ -10,8 +10,9 @@ import org.springframework.data.repository.query.Param;
 import java.util.List;
 
 public interface BasketProductRepository extends JpaRepository<BasketProduct, Long> {
-
-    @Query("SELECT NEW com.ajwalker.views.VwGetBasketProduct(bp.basketId, bp.productId, bp.quantity, bp.unitPrice) FROM BasketProduct bp WHERE bp.basketId = :basketId AND bp.state = :state")
+    
+    @Query("SELECT NEW com.ajwalker.views.VwGetBasketProduct(bp.basketId, bp.productId, bp.quantity, bp.unitPrice,bp.totalPrice) " +
+            "FROM BasketProduct bp WHERE bp.basketId = :basketId AND bp.state = :state")
     List<VwGetBasketProduct> findAllByBasketIdAndState(@Param("basketId") Long basketId, @Param("state") EState state);
 
 }
