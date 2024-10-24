@@ -10,6 +10,7 @@ import com.ajwalker.exception.ErrorType;
 import com.ajwalker.exception.TierdYolException;
 import com.ajwalker.repository.BasketRepository;
 import com.ajwalker.utility.enums.EBasketState;
+import com.ajwalker.utility.enums.EState;
 import com.ajwalker.utility.enums.EUserStatus;
 import com.ajwalker.views.VwGetBasketProduct;
 
@@ -54,23 +55,18 @@ public class BasketService {
         }
     }
 
-
-    public List<VwGetBasketProduct> getBasket(Long userId) {
+    public List<VwGetBasketProduct> getBasketProductsList(Long userId) {
         Basket basket = basketRepository.findByUserAndBasketState(userId, EBasketState.ACTIVE);
         if (basket == null) {
             throw new TierdYolException(ErrorType.NOT_FOUND_BASKET);
         }
-        List<VwGetBasketProduct> basketProducts = basketProductService.findByBasketId(basket.getId());
-
+        List<VwGetBasketProduct> basketProducts = basketProductService.findAllByBasketIdAndState(basket.getId(),EState.ACTIVE);
         return basketProducts;
+
     }
 
     public void deleteBasketInProduct(DeleteBasketProductRequestDto dto) {
-        EUserStatus userStatus = userService.findUserStatusByUserId(dto.id());
-
-//        Optional<BasketProduct> Id = basketProductService.findByBasketId(dto.id());
-//        if (Id.isEmpty()){
-//            throw new TierdYolException(ErrorType.NOT_FOUNT_PRODUCT);
-//        }
+        basketProductService.deleteProductFromBasket(dto);
     }
+
 }
