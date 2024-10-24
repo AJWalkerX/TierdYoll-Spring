@@ -41,10 +41,12 @@ public class BasketController {
                 .code(200)
                 .success(true)
                 .message("Product added successfully to Basket")
-                .data(basketService.getBasket(Id))
+                .data(basketService.getBasketProductsList(Id))
                 .build());
     }
 
+
+    @PostMapping("/delete-product")
     public ResponseEntity<BaseResponse<Boolean>> deleteBasketInProduct(@RequestBody @Valid DeleteBasketProductRequestDto dto){
         basketService.deleteBasketInProduct(dto);
         return ResponseEntity.ok(BaseResponse.<Boolean>builder()

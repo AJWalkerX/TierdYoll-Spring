@@ -1,9 +1,7 @@
 package com.ajwalker.repository;
 
 import com.ajwalker.entity.Basket;
-import com.ajwalker.entity.User;
 import com.ajwalker.utility.enums.EBasketState;
-import com.ajwalker.views.VwGetBasket;
 import com.ajwalker.views.VwGetBasketProduct;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
