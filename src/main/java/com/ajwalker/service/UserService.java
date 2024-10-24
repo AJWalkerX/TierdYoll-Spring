@@ -2,6 +2,7 @@ package com.ajwalker.service;
 
 import com.ajwalker.dto.request.DologinRequestDto;
 import com.ajwalker.dto.request.RegisterRequestDto;
+import com.ajwalker.dto.request.ResetPasswordRequestDto;
 import com.ajwalker.entity.User;
 import com.ajwalker.exception.ErrorType;
 import com.ajwalker.exception.TierdYolException;
@@ -65,10 +66,20 @@ public class UserService {
         return token;
     }
 
-    public void resetPassword(String token, String newPassword) {
+    public void resetPassword(String token, ResetPasswordRequestDto dto) {
         Long userId = validateToken(token);
-        User user = findByIdRegisteration(userId);
-        user.setPassword(passwordEncoder.encode(newPassword));
+        Optional<User> userOptional = findById(userId);
+        if (userOptional.isEmpty()) {
+            throw new TierdYolException(ErrorType.NOTFOUND_USER);
+        }
+        User user = userOptional.get();
+        if (user.getState().equals(EState.PENDING) || user.getState().equals(EState.PASSIVE)) {
+            throw new TierdYolException(ErrorType.LOGIN_STATE_ERROR);
+        }
+        if (!dto.password().equals(dto.rePassword())){
+            throw new TierdYolException(ErrorType.PASSWORD_ERROR);
+        }
+        user.setPassword(passwordEncoder.encode(dto.password()));
         userRepository.save(user);
     }
 

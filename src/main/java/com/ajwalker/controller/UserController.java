@@ -86,13 +86,54 @@ public class UserController {
 
     @PostMapping(RESET_PASSWORD)
     public ResponseEntity<BaseResponse<Boolean>> resetPassword(@RequestParam String token,
-                                                               @RequestBody @Valid ResetPasswordRequestDto dto) {
-        userService.resetPassword(token, dto.password());
+                                                               @ModelAttribute @Valid ResetPasswordRequestDto dto) {
+        userService.resetPassword(token, dto);
         return ResponseEntity.ok(BaseResponse.<Boolean>builder()
                 .code(200)
                 .data(true)
                 .message("Şifreniz başarıyla sıfırlandı.")
                 .success(true)
                 .build());
+    }
+
+    @GetMapping("/reset-password")
+    public ResponseEntity<String> verifyResetToken(@RequestParam String token) {
+        userService.validateToken(token);
+        String htmlForm = "<!DOCTYPE html>\n" +
+                "<html>\n" +
+                "<head>\n" +
+                "    <title>Şifre Sıfırlama</title>\n" +
+                "</head>\n" +
+                "<body>\n" +
+                "<h1>Şifrenizi Sıfırlayın</h1>\n" +
+                "<form id=\"resetPasswordForm\" action=\"reset-password\" method=\"post\">\n" +
+                "    <input type=\"hidden\" name=\"token\" value=\"\" id=\"token\">\n" +
+                "    <label for=\"password\">Yeni Şifre:</label>\n" +
+                "    <input type=\"password\" id=\"password\" name=\"password\" required /><br><br>\n" +
+                "\n" +
+                "    <label for=\"rePassword\">Yeni Şifre (Tekrar):</label>\n" +
+                "    <input type=\"password\" id=\"rePassword\" name=\"rePassword\" required /><br><br>\n" +
+                "\n" +
+                "    <button type=\"submit\">Şifreyi Sıfırla</button>\n" +
+                "</form>\n" +
+                "\n" +
+                "<script>\n" +
+                "    const urlParams = new URLSearchParams(window.location.search);\n" +
+                "    const token = urlParams.get('token');\n" +
+                "    document.getElementById('token').value = token;\n" +
+                "\n" +
+                "    document.getElementById('resetPasswordForm').onsubmit = function() {\n" +
+                "        const password = document.getElementById('password').value;\n" +
+                "        const confirmPassword = document.getElementById('confirmPassword').value;\n" +
+                "        if (password !== confirmPassword) {\n" +
+                "            alert('Şifreler eşleşmiyor!');\n" +
+                "            return false; \n" +
+                "        }\n" +
+                "        return true;\n" +
+                "    };\n" +
+                "</script>\n" +
+                "</body>\n" +
+                "</html>\n";
+        return ResponseEntity.ok(htmlForm);
     }
 }
