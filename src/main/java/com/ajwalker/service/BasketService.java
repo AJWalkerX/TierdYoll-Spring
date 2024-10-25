@@ -11,7 +11,6 @@ import com.ajwalker.exception.TierdYolException;
 import com.ajwalker.repository.BasketRepository;
 import com.ajwalker.utility.enums.EBasketState;
 import com.ajwalker.utility.enums.EState;
-import com.ajwalker.utility.enums.EUserStatus;
 import com.ajwalker.views.VwGetBasketProduct;
 
 import lombok.RequiredArgsConstructor;
@@ -49,6 +48,7 @@ public class BasketService {
             basketProduct.setProductId(product.getId());
             basketProduct.setQuantity(dto.quantity());
             basketProduct.setUnitPrice(product.getPrice());
+            basketProduct.setTotalPrice(product.getPrice()*dto.quantity());
             basketProductService.addProductToCart(basketProduct);
 
 
@@ -64,6 +64,8 @@ public class BasketService {
         return basketProducts;
 
     }
+
+
 
     public void deleteBasketInProduct(DeleteBasketProductRequestDto dto) {
         basketProductService.deleteProductFromBasket(dto);

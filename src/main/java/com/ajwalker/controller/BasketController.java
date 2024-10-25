@@ -4,9 +4,8 @@ package com.ajwalker.controller;
 import com.ajwalker.dto.request.AddProductToBasketRequestDto;
 import com.ajwalker.dto.request.DeleteBasketProductRequestDto;
 import com.ajwalker.dto.response.BaseResponse;
+import com.ajwalker.service.BasketProductService;
 import com.ajwalker.service.BasketService;
-import com.ajwalker.service.ProductService;
-import com.ajwalker.views.VwGetBasket;
 import com.ajwalker.views.VwGetBasketProduct;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -20,7 +19,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class BasketController {
     private final BasketService basketService;
-
+    private BasketProductService basketProductService;
 
 
     @PostMapping("/add")
@@ -40,11 +39,10 @@ public class BasketController {
         return ResponseEntity.ok(BaseResponse.<List<VwGetBasketProduct>>builder()
                 .code(200)
                 .success(true)
-                .message("Product added successfully to Basket")
+                .message("Product List successfully to Basket")
                 .data(basketService.getBasketProductsList(Id))
                 .build());
     }
-
 
     @PostMapping("/delete-product")
     public ResponseEntity<BaseResponse<Boolean>> deleteBasketInProduct(@RequestBody @Valid DeleteBasketProductRequestDto dto){
