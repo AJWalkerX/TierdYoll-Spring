@@ -19,8 +19,6 @@ import java.util.List;
 @RequiredArgsConstructor
 public class BasketController {
     private final BasketService basketService;
-    private BasketProductService basketProductService;
-
 
     @PostMapping("/add")
     public ResponseEntity<BaseResponse<Boolean>> addProductToBasket(@RequestBody @Valid AddProductToBasketRequestDto dto) {
