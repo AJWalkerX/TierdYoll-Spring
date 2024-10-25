@@ -2,13 +2,11 @@ package com.ajwalker.repository;
 
 import com.ajwalker.entity.Basket;
 import com.ajwalker.utility.enums.EBasketState;
-import com.ajwalker.views.VwGetBasketProduct;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
-import java.util.List;
 import java.util.Optional;
 
 public interface BasketRepository extends JpaRepository<Basket, Long> {
@@ -20,8 +18,7 @@ public interface BasketRepository extends JpaRepository<Basket, Long> {
     Basket findByUserAndBasketState(@Param("userId") Long userId,
                                     @Param("basketState") EBasketState basketState);
 
-    @Query("SELECT b FROM Basket b WHERE b.id = : basketId")
-    Optional<Basket> findByBasketId(@Param("basketId") Long basketId);
+    Optional<Basket> findOptionalById(Long id);
 
     @Modifying
     @Query("UPDATE Basket b SET b.basketState = :basketState WHERE b.id = :basketId")

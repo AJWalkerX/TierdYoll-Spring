@@ -70,7 +70,7 @@ public class BasketService {
     }
 
     public Optional<Basket> findByBasketId(Long basketId) {
-        return basketRepository.findByBasketId(basketId);
+        return basketRepository.findOptionalById(basketId);
     }
 
 
