@@ -21,7 +21,7 @@ public interface BasketRepository extends JpaRepository<Basket, Long> {
     Optional<Basket> findOptionalById(Long id);
 
     @Modifying
-    @Query("UPDATE Basket b SET b.basketState = :basketState WHERE b.id = :basketId")
-    Optional<Basket> updateBasketStateById(@Param("basketId") Long basketId, @Param ("basketState")EBasketState basketState);
+    @Query("UPDATE Basket b SET b.basketState = :basketState WHERE b.id = :id")
+    void updateBasketStateById(@Param("id") Long id, @Param ("basketState")EBasketState basketState);
 
 }
