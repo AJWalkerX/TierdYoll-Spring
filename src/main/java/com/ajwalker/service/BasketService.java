@@ -65,10 +65,16 @@ public class BasketService {
 
     }
 
-
-
     public void deleteBasketInProduct(DeleteBasketProductRequestDto dto) {
         basketProductService.deleteProductFromBasket(dto);
     }
 
+    public Optional<Basket> findByBasketId(Long basketId) {
+        return basketRepository.findByBasketId(basketId);
+    }
+
+
+    public Optional<Basket> updateBasketStateById(Long basketId, EBasketState basketState) {
+        return basketRepository.updateBasketStateById(basketId,basketState);
+    }
 }

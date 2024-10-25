@@ -1,6 +1,5 @@
 package com.ajwalker.entity;
 
-
 import com.ajwalker.utility.ProductCodeGeneratable;
 import com.ajwalker.utility.enums.EBrand;
 import com.ajwalker.utility.enums.ECategory;
@@ -8,7 +7,6 @@ import com.ajwalker.utility.enums.EColor;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.DecimalMax;
 import jakarta.validation.constraints.DecimalMin;
-import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
