@@ -12,5 +12,4 @@ public interface OrderMapper {
 
     OrderMapper INSTANCE = Mappers.getMapper(OrderMapper.class);
 
-    Order orderByBasketRequestDto(final OrderByBasketRequestDto dto);
 }

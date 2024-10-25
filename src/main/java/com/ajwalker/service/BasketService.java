@@ -13,6 +13,7 @@ import com.ajwalker.utility.enums.EBasketState;
 import com.ajwalker.utility.enums.EState;
 import com.ajwalker.views.VwGetBasketProduct;
 
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -73,8 +74,8 @@ public class BasketService {
         return basketRepository.findOptionalById(basketId);
     }
 
-
-    public Optional<Basket> updateBasketStateById(Long basketId, EBasketState basketState) {
-        return basketRepository.updateBasketStateById(basketId,basketState);
+    @Transactional
+    public void updateBasketStateById(Long basketId, EBasketState basketState) {
+        basketRepository.updateBasketStateById(basketId,basketState);
     }
 }

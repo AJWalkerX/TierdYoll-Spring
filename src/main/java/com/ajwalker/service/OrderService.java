@@ -10,9 +10,13 @@ import com.ajwalker.repository.OrderRepository;
 import com.ajwalker.utility.enums.EBasketState;
 import com.ajwalker.utility.enums.EOrderState;
 import com.ajwalker.utility.enums.EUserStatus;
+import com.ajwalker.views.VwPastOrderList;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -34,6 +38,7 @@ public class OrderService {
         Order order = Order.builder()
                 .userId(dto.userId())
                 .basketId(dto.basketId())
+                .address(dto.address())
                 .orderState(EOrderState.DELIVERED)
                 .orderDate(System.currentTimeMillis())
                 .build();
@@ -42,5 +47,9 @@ public class OrderService {
 
     }
 
+    public List<VwPastOrderList> getAllProducts(Long userId) {
+        return orderRepository.findPastOrdersByUserId(userId);
+
+    }
 
 }
