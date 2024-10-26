@@ -1,6 +1,9 @@
 package com.ajwalker.dto.request;
 
 import com.ajwalker.utility.enums.ECategory;
+import com.ajwalker.utility.enums.MainCategoryType;
+import com.ajwalker.utility.enums.ProductType;
+import com.ajwalker.utility.enums.SubCategoryType;
 import org.springframework.web.multipart.MultipartFile;
 
 public record AddProductRequestDto(
@@ -8,7 +11,9 @@ public record AddProductRequestDto(
 		Long price,
 		Long userId,
 		Integer stock,
-		ECategory category,
+		MainCategoryType mainCategory,
+		SubCategoryType subCategory,
+		ProductType productType,
 		MultipartFile file
 ) {
 }

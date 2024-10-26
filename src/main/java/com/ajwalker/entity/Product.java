@@ -31,8 +31,8 @@ public class Product extends BaseEntity implements ProductCodeGeneratable {
     @Column(name = "user_id")
     Long userId;//satıcı id
     Integer stock;
-    @Enumerated(EnumType.STRING)
-    ECategory category;
+    @Column(name = "category_id", nullable = false)
+    Long categoryId;
     @Enumerated(EnumType.STRING)
     EBrand brand;
     @DecimalMin(value = "1.0", inclusive = true, message = "Rating must be at least 0.0")

@@ -4,6 +4,7 @@ import com.ajwalker.dto.request.AddProductRequestDto;
 import com.ajwalker.dto.request.DeleteProductRequestDto;
 import com.ajwalker.dto.request.ProductFilterDto;
 import com.ajwalker.dto.request.UpdateProductRequestDto;
+import com.ajwalker.dto.response.AllProductResponseDto;
 import com.ajwalker.dto.response.BaseResponse;
 import com.ajwalker.entity.BaseEntity;
 import com.ajwalker.entity.Product;
@@ -12,6 +13,7 @@ import com.ajwalker.views.VwProduct;
 import com.ajwalker.views.VwProductDetails;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -41,8 +43,8 @@ public class ProductController {
 	}
 	
 	@GetMapping("/v1/dev/product/get-all-products")
-	public ResponseEntity<BaseResponse<List<VwProduct>>> getAllProducts(){
-		return ResponseEntity.ok(BaseResponse.<List<VwProduct>>builder()
+	public ResponseEntity<BaseResponse<List<AllProductResponseDto>>> getAllProducts(){
+		return ResponseEntity.ok(BaseResponse.<List<AllProductResponseDto>>builder()
 				                         .success(true)
 				                         .code(200)
 				                         .message("All products success")
@@ -83,12 +85,12 @@ public class ProductController {
 	}
 
 	@PostMapping(FILTER)
-	public ResponseEntity<BaseResponse<List<Product>>> filterProducts(@RequestBody @Valid ProductFilterDto filterDto) {
-		return ResponseEntity.ok(BaseResponse.<List<Product>>builder()
+	public ResponseEntity<BaseResponse<Page<Product>>> filterProducts(@RequestBody @Valid List<ProductFilterDto> dtoList) {
+		return ResponseEntity.ok(BaseResponse.<Page<Product>>builder()
 				.success(true)
 				.code(200)
 				.message("Product filtered")
-				.data(productService.filterProducts(filterDto))
+				.data(productService.filterProducts(dtoList))
 				.build());
 	}
 	

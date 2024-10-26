@@ -19,6 +19,6 @@ public class VwProductDetails {
 	Long price;
 	Long userId;
 	Integer stock;
-	ECategory category;
+	Long categoryId;
 	
 }

@@ -1,11 +1,8 @@
 package com.ajwalker.views;
 
-import com.ajwalker.utility.enums.ECategory;
 import com.ajwalker.utility.enums.MainCategoryType;
 import com.ajwalker.utility.enums.ProductType;
 import com.ajwalker.utility.enums.SubCategoryType;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -15,8 +12,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Builder
 @Data
-public class VwProduct {
-	String name;
-	String productCode;
-	Long categoryId;
+public class VwCategory {
+    private Long id;
+    private MainCategoryType mainCategoryType;
+    private SubCategoryType subCategoryType;
+    private ProductType productType;
 }
