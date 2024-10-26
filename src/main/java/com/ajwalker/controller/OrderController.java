@@ -30,10 +30,7 @@ public class OrderController {
                         .message("Order Delivered")
                 .build());
     }
-
-    //TODO databasede 2 tane pasif sepet var user 1 geçmiş basket veya orderlarını görüntülemek isteyeceğiz 3 tablo ile çalışmamız gerekecek basket, order,
-    // basket-product tabloları.
-
+    
     @GetMapping("/past-order")
     public ResponseEntity<BaseResponse<List<VwPastOrderList>>> getPastOrders(Long userId){
         return ResponseEntity.ok(BaseResponse.<List<VwPastOrderList>>builder()
@@ -43,5 +40,6 @@ public class OrderController {
                 .data(orderService.getAllProducts(userId))
                 .build());
     }
+
 
 }
