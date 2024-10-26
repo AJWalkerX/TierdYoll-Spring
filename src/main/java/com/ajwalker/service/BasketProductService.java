@@ -44,4 +44,11 @@ public class BasketProductService {
 
     }
 
+    public void processBasket(Long basketId) {
+        List<VwGetBasketProduct> products = basketProductRepository.findAllByBasketIdAndState(basketId, EState.ACTIVE);
+        for (VwGetBasketProduct product : products) {
+            basketProductRepository.updateProductStock(product.getProductId(), product.getQuantity());
+        }
+    }
+
 }
